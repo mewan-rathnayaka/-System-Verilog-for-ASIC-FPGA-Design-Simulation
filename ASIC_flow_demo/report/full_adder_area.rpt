@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : full_adder
+Version: T-2022.03-SP5-1
+Date   : Wed Apr 26 19:29:19 2023
+****************************************
+
+Library(s) Used:
+
+    saed32hvt_ss0p7v125c (File: /home/aedc4/libs/tsmc_32nm/SAED32_EDK/lib/stdcell_hvt/db_nldm/saed32hvt_ss0p7v125c.db)
+
+Number of ports:                            5
+Number of nets:                             6
+Number of cells:                            3
+Number of combinational cells:              3
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                          0
+Number of references:                       3
+
+Combinational area:                 14.486208
+Buf/Inv area:                        0.000000
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:               1.020228
+
+Total cell area:                    14.486208
+Total area:                         15.506436
+1

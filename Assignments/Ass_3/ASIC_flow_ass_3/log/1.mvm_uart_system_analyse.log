@@ -1,0 +1,6 @@
+Running PRESTO HDLC
+Compiling source file ../input/rtl/axis_matvec_mul.v
+Compiling source file ../input/rtl/mvm_uart_system.v
+Warning:  ../input/rtl/mvm_uart_system.v:52: A unnamed generate block with an LRM-defined name 'genblk1' is detected, which is incompatible with Verilog standard 2001 or 1995. (VER-944)
+Presto compilation completed successfully.
+1

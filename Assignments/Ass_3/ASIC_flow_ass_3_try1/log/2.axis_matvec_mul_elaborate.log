@@ -1,0 +1,26 @@
+Loading db file '/home/aedc4/Apps/syn/T-2022.03-SP5-1/libraries/syn/gtech.db'
+Loading db file '/home/aedc4/Apps/syn/T-2022.03-SP5-1/libraries/syn/standard.sldb'
+  Loading link library 'saed32hvt_ss0p7v125c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+
+Inferred memory devices in process
+	in routine axis_matvec_mul line 34 in file
+		'../input/rtl/axis_matvec_mul.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     i_valid_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|      shift_reg      | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (axis_matvec_mul)
+Elaborated 1 design.
+Current design is now 'axis_matvec_mul'.
+Information: Building the design 'matvec_mul' instantiated from design 'axis_matvec_mul' with
+	the parameters "R=8,C=8,W_X=8,W_K=8". (HDL-193)
+Warning: Cannot find the design 'matvec_mul' in the library 'WORK'. (LBR-1)
+Information: Building the design 'skid_buffer' instantiated from design 'axis_matvec_mul' with
+	the parameters "WIDTH=152". (HDL-193)
+Warning: Cannot find the design 'skid_buffer' in the library 'WORK'. (LBR-1)
+Warning: Design 'axis_matvec_mul' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+1

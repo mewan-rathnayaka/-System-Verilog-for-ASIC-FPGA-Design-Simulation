@@ -1,0 +1,145 @@
+Loading db file '/home/aedc4/Apps/syn/T-2022.03-SP5-1/libraries/syn/gtech.db'
+Loading db file '/home/aedc4/Apps/syn/T-2022.03-SP5-1/libraries/syn/standard.sldb'
+  Loading link library 'saed32hvt_ss0p7v125c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Warning:  ../input/rtl/mvm_uart_system.v:54: signed to unsigned assignment occurs. (VER-318)
+Presto compilation completed successfully. (mvm_uart_system)
+Elaborated 1 design.
+Current design is now 'mvm_uart_system'.
+Information: Building the design 'uart_rx' instantiated from design 'mvm_uart_system' with
+	the parameters "CLOCKS_PER_PULSE=20833,BITS_PER_WORD=8,W_OUT=12". (HDL-193)
+Warning:  ../input/rtl/uart_rx.sv:35: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../input/rtl/uart_rx.sv:49: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../input/rtl/uart_rx.sv:45: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../input/rtl/uart_rx.sv:41: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../input/rtl/uart_rx.sv:57: signed to unsigned conversion occurs. (VER-318)
+
+Statistics for case statements in always block at line 22 in file
+	'../input/rtl/uart_rx.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            30            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine uart_rx_CLOCKS_PER_PULSE20833_BITS_PER_WORD8_W_OUT12 line 22 in file
+		'../input/rtl/uart_rx.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      state_reg      | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     m_data_reg      | Flip-flop |  12   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     c_words_reg     | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     c_bits_reg      | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    c_clocks_reg     | Flip-flop |  15   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     m_valid_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (uart_rx_CLOCKS_PER_PULSE20833_BITS_PER_WORD8_W_OUT12)
+Information: Building the design 'axis_matvec_mul' instantiated from design 'mvm_uart_system' with
+	the parameters "R=2,C=2,W_X=2,W_K=2". (HDL-193)
+
+Inferred memory devices in process
+	in routine axis_matvec_mul_R2_C2_W_X2_W_K2 line 34 in file
+		'../input/rtl/axis_matvec_mul.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     i_valid_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|      shift_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (axis_matvec_mul_R2_C2_W_X2_W_K2)
+Information: Building the design 'uart_tx' instantiated from design 'mvm_uart_system' with
+	the parameters "CLOCKS_PER_PULSE=20833,BITS_PER_WORD=8,PACKET_SIZE=13,W_OUT=64". (HDL-193)
+Warning:  ../input/rtl/uart_tx.sv:47: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../input/rtl/uart_tx.sv:44: signed to unsigned conversion occurs. (VER-318)
+
+Statistics for case statements in always block at line 31 in file
+	'../input/rtl/uart_tx.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            38            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine uart_tx_CLOCKS_PER_PULSE20833_BITS_PER_WORD8_PACKET_SIZE13_W_OUT64 line 31 in file
+		'../input/rtl/uart_tx.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    c_pulses_reg     | Flip-flop |   7   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      state_reg      | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    m_packets_reg    | Flip-flop |  104  |  Y  | N  | N  | Y  | N  | N  | N  |
+|    c_clocks_reg     | Flip-flop |  15   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (uart_tx_CLOCKS_PER_PULSE20833_BITS_PER_WORD8_PACKET_SIZE13_W_OUT64)
+Information: Building the design 'matvec_mul' instantiated from design 'axis_matvec_mul_R2_C2_W_X2_W_K2' with
+	the parameters "R=2,C=2,W_X=2,W_K=2". (HDL-193)
+Warning:  ../input/rtl/matvec_mul.sv:17: Concatenations cannot have unsized numbers; assuming 32 bits. (ELAB-332)
+Warning:  ../input/rtl/matvec_mul.sv:17: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../input/rtl/matvec_mul.sv:22: Concatenations cannot have unsized numbers; assuming 32 bits. (ELAB-332)
+Warning:  ../input/rtl/matvec_mul.sv:33: signed to unsigned assignment occurs. (VER-318)
+Warning:  ../input/rtl/matvec_mul.sv:22: Concatenations cannot have unsized numbers; assuming 32 bits. (ELAB-332)
+
+Inferred memory devices in process
+	in routine matvec_mul_R2_C2_W_X2_W_K2 line 25 in file
+		'../input/rtl/matvec_mul.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      tree_reg       | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine matvec_mul_R2_C2_W_X2_W_K2 line 30 in file
+		'../input/rtl/matvec_mul.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      tree_reg       | Flip-flop |  10   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (matvec_mul_R2_C2_W_X2_W_K2)
+Information: Building the design 'skid_buffer' instantiated from design 'axis_matvec_mul_R2_C2_W_X2_W_K2' with
+	the parameters "WIDTH=10". (HDL-193)
+
+Statistics for case statements in always block at line 8 in file
+	'../input/rtl/skid_buffer.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            10            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine skid_buffer_WIDTH10 line 15 in file
+		'../input/rtl/skid_buffer.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      state_reg      | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine skid_buffer_WIDTH10 line 26 in file
+		'../input/rtl/skid_buffer.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     m_valid_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     s_ready_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     b_valid_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine skid_buffer_WIDTH10 line 36 in file
+		'../input/rtl/skid_buffer.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     m_data_reg      | Flip-flop |  10   |  Y  | N  | N  | N  | N  | N  | N  |
+|     b_data_reg      | Flip-flop |  10   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (skid_buffer_WIDTH10)
+1

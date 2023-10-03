@@ -1,0 +1,18 @@
+<Database>
+versionNumber:2
+Name/home/aedc4/0_SysV_Mewan/ASIC_flow_demo/scripts/icc2/check_workspace.ems
+Creation TimeWed Apr 26 21:19:23 2023
+Modified TimeWed Apr 26 21:19:23 2023
+Design Name
+Library Name
+</Database>
+<RuleCount>
+LM-0501
+LMUI-0091
+</RuleCount>
+<UserDefinedRules>
+</UserDefinedRules>
+<Messages>
+LMUI-009Warningpara1-allow_missing10para2option10para3physical_only10
+LM-050Informationpara15610para2s10
+</Messages>

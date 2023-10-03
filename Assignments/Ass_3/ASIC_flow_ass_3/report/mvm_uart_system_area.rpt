@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : mvm_uart_system
+Version: T-2022.03-SP5-1
+Date   : Sat Apr 29 15:42:33 2023
+****************************************
+
+Library(s) Used:
+
+    saed32hvt_ss0p7v125c (File: /home/aedc4/libs/tsmc_32nm/SAED32_EDK/lib/stdcell_hvt/db_nldm/saed32hvt_ss0p7v125c.db)
+
+Number of ports:                            4
+Number of nets:                          1068
+Number of cells:                          923
+Number of combinational cells:            612
+Number of sequential cells:               310
+Number of macros/black boxes:               0
+Number of buf/inv:                        119
+Number of references:                      51
+
+Combinational area:               1728.941639
+Buf/Inv area:                      394.177350
+Noncombinational area:            2163.527918
+Macro/Black Box area:                0.000000
+Net Interconnect area:             923.917724
+
+Total cell area:                  3892.469557
+Total area:                       4816.387281
+1

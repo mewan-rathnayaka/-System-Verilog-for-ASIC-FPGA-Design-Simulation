@@ -1,0 +1,9 @@
+Loading db file '/home/aedc4/Apps/syn/T-2022.03-SP5-1/libraries/syn/gtech.db'
+Loading db file '/home/aedc4/Apps/syn/T-2022.03-SP5-1/libraries/syn/standard.sldb'
+  Loading link library 'saed32hvt_ss0p7v125c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully. (full_adder)
+Elaborated 1 design.
+Current design is now 'full_adder'.
+1

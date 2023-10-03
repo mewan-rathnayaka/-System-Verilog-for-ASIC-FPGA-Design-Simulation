@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../simple_alu"
+		},
+		{
+			"path": "../sev_seg_con"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {}
+}

@@ -1,0 +1,1194 @@
+ 
+                              IC Compiler II (TM)
+
+                  Version U-2022.12 for linux64 - Dec 11, 2022
+  This release has significant feature enhancements. Please review the Release
+                       Notes associated with this release.
+
+                    Copyright (c) 1988 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+icc2_shell> start gui
+Error: ambiguous command 'start' matched 4 commands:
+        (start_auto_save, start_busplan_gui, start_gui ...) (CMD-006)
+icc2_shell> gui
+Error: ambiguous command 'gui' matched 174 commands:
+        (gui_add_missing_vias, gui_append_utable, gui_bin ...) (CMD-006)
+icc2_shell> start_gui
+icc2_shell> #/* Top-level Module                                  */
+icc2_shell> set top_module full_adder
+full_adder
+icc2_shell> #/* Library Name                                      */
+icc2_shell> set library_name fa_icc2
+fa_icc2
+icc2_shell> set PDKDIR /home/aedc4/libs/tsmc_32nm/SAED32_EDK
+/home/aedc4/libs/tsmc_32nm/SAED32_EDK
+icc2_shell> set SAED32_EDK /home/aedc4/libs/tsmc_32nm/SAED32_EDK/lib
+/home/aedc4/libs/tsmc_32nm/SAED32_EDK/lib
+icc2_shell> set synopsys /home/aedc4/Apps/syn/T-2022.03-SP5-1
+/home/aedc4/Apps/syn/T-2022.03-SP5-1
+icc2_shell> set search_path [concat $search_path $SAED32_EDK/stdcell_hvt $SAED32_EDK/stdcell_hvt/db_nldm]
+. /home/aedc4/libs/tsmc_32nm/SAED32_EDK/lib/stdcell_hvt /home/aedc4/libs/tsmc_32nm/SAED32_EDK/lib/stdcell_hvt/db_nldm
+icc2_shell> set link_library {* saed32hvt_ss0p7v125c.db}
+* saed32hvt_ss0p7v125c.db
+icc2_shell> set_app_options -list {lib.configuration.default_flow_setup {}};
+lib.configuration.default_flow_setup {}
+icc2_shell> set_app_options -list {lib.configuration.output_dir {CLIBs}}
+lib.configuration.output_dir CLIBs
+icc2_shell> set_app_options -list {lib.configuration.lef_site_mapping {}}
+lib.configuration.lef_site_mapping {}
+icc2_shell> set_app_options -list {lib.configuration.process_label_mapping {}}
+lib.configuration.process_label_mapping {}
+icc2_shell> set_app_options -list {lib.configuration.display_lm_messages {false}}
+lib.configuration.display_lm_messages false
+icc2_shell> #----------------------------------------------
+icc2_shell> #   Create Library
+icc2_shell> #----------------------------------------------
+icc2_shell> create_lib -ref_libs {/home/aedc4/0_SysV_Mewan/ASIC_flow_demo/libs/saed32nm_hvt_1p9m.lef} -technology /home/aedc4/0_SysV_Mewan/ASIC_flow_demo/libs/saed32nm_1p9m_mw.tf $library_name
+Information: Loading technology file '/home/aedc4/0_SysV_Mewan/ASIC_flow_demo/libs/saed32nm_1p9m_mw.tf' (FILE-007)
+...Created 2 lib groups
+
+... 2 cell libraries to build.
+
+
+... checking whether need to build cell library: saed32hvt_ss0p7v125c.ndm (1/2)
+... checking whether can reuse library under output directory
+cannot reuse CLIBs/saed32hvt_ss0p7v125c.ndm under output directory: library not exists
+
+... checking whether need to build cell library: saed32hvt_ss0p7v125c_physical_only.ndm (2/2)
+... checking whether can reuse library under output directory
+cannot reuse CLIBs/saed32hvt_ss0p7v125c_physical_only.ndm under output directory: library not exists
+
+... processing cell library: saed32hvt_ss0p7v125c.ndm (1/2)
+... run lm_shell to build the cell library
+...............................................................................
+..............................................................................
+.......................
+created new cell library under output directory: CLIBs/saed32hvt_ss0p7v125c.ndm
+
+... processing cell library: saed32hvt_ss0p7v125c_physical_only.ndm (2/2)
+... run lm_shell to build the cell library
+........
+created new cell library under output directory: CLIBs/saed32hvt_ss0p7v125c_physical_only.ndm
+
+
+Information: Successfully built 2 reference libraries: saed32hvt_ss0p7v125c.ndm saed32hvt_ss0p7v125c_physical_only.ndm. (LIB-093)
+{fa_icc2}
+icc2_shell> read_parasitic_tech -name {parasitics} -tlup {/home/aedc4/0_SysV_Mewan/ASIC_flow_demo/libs/saed32nm_1p9m_Cmax.tluplus} -layermap {/home/aedc4/0_SysV_Mewan/ASIC_flow_demo/libs/saed32nm_tf_itf_tluplus.map}
+1
+icc2_shell> change_selection [get_libs {fa_icc2}]
+icc2_shell> read_verilog -library fa_icc2 -top full_adder ../../output/full_adder.out.v
+Information: Reading Verilog into new design 'full_adder' in library 'fa_icc2'. (VR-012)
+Loading verilog file '/home/aedc4/0_SysV_Mewan/ASIC_flow_demo/output/full_adder.out.v'
+Number of modules read: 1
+Top level ports: 5
+Total ports in all modules: 5
+Total nets in all modules: 6
+Total instances in all modules: 3
+Elapsed = 00:00:00.00, CPU = 00:00:00.00
+1
+icc2_shell> link_block
+Using libraries: fa_icc2 saed32hvt_ss0p7v125c saed32hvt_ss0p7v125c_physical_only
+Linking block fa_icc2:full_adder.design
+Information: User units loaded from library 'saed32hvt_ss0p7v125c' (LNK-040)
+Design 'full_adder' was successfully linked.
+1
+icc2_shell> save_block fa_icc2:full_adder
+Information: Saving block 'fa_icc2:full_adder.design'
+icc2_shell> initialize_floorplan -core_offset {5}
+Warning: The routing directions for layer 'M1 M2 M3 M4 M5 M6 M7 M8 M9 MRDL ' are missing. Auto deriving 'horizontal' routing direction for layer 'M1'. (DPUI-924)
+Warning: The routing directions for layer 'M1 M2 M3 M4 M5 M6 M7 M8 M9 MRDL ' are missing. Auto deriving 'vertical' routing direction for layer 'M2'. (DPUI-924)
+Warning: The routing directions for layer 'M1 M2 M3 M4 M5 M6 M7 M8 M9 MRDL ' are missing. Auto deriving 'horizontal' routing direction for layer 'M3'. (DPUI-924)
+Warning: The routing directions for layer 'M1 M2 M3 M4 M5 M6 M7 M8 M9 MRDL ' are missing. Auto deriving 'vertical' routing direction for layer 'M4'. (DPUI-924)
+Warning: The routing directions for layer 'M1 M2 M3 M4 M5 M6 M7 M8 M9 MRDL ' are missing. Auto deriving 'horizontal' routing direction for layer 'M5'. (DPUI-924)
+Warning: The routing directions for layer 'M1 M2 M3 M4 M5 M6 M7 M8 M9 MRDL ' are missing. Auto deriving 'vertical' routing direction for layer 'M6'. (DPUI-924)
+Warning: The routing directions for layer 'M1 M2 M3 M4 M5 M6 M7 M8 M9 MRDL ' are missing. Auto deriving 'horizontal' routing direction for layer 'M7'. (DPUI-924)
+Warning: The routing directions for layer 'M1 M2 M3 M4 M5 M6 M7 M8 M9 MRDL ' are missing. Auto deriving 'vertical' routing direction for layer 'M8'. (DPUI-924)
+Warning: The routing directions for layer 'M1 M2 M3 M4 M5 M6 M7 M8 M9 MRDL ' are missing. Auto deriving 'horizontal' routing direction for layer 'M9'. (DPUI-924)
+Warning: The routing directions for layer 'M1 M2 M3 M4 M5 M6 M7 M8 M9 MRDL ' are missing. Auto deriving 'vertical' routing direction for layer 'MRDL'. (DPUI-924)
+Removing existing floorplan objects
+Creating core...
+Core utilization ratio = 98.28%
+Unplacing all cells...
+Creating site array...
+Creating routing tracks...
+Initializing floorplan completed.
+icc2_shell> initialize_floorplan -core_offset {5}
+Removing existing floorplan objects
+Creating core...
+Core utilization ratio = 98.28%
+Unplacing all cells...
+Creating site array...
+Creating routing tracks...
+Initializing floorplan completed.
+icc2_shell> 
+****************************************
+Report : Power/Ground Connection Summary
+Design : full_adder
+Version: U-2022.12
+Date   : Wed Apr 26 21:58:21 2023
+****************************************
+P/G net name                  P/G pin count(previous/current)
+--------------------------------------------------------------------------------
+Power net VDD                 0/3
+Ground net VSS                0/3
+--------------------------------------------------------------------------------
+Information: connections of 6 power/ground pin(s) are created or changed.
+****************************************
+Report : Power/Ground Connection Summary
+Design : full_adder
+Version: U-2022.12
+Date   : Wed Apr 26 21:58:39 2023
+****************************************
+P/G net name                  P/G pin count(previous/current)
+--------------------------------------------------------------------------------
+Power net VDD                 3/3
+Ground net VSS                3/3
+--------------------------------------------------------------------------------
+Information: connections of 0 power/ground pin(s) are created or changed.
+icc2_shell> create_pg_ring_pattern ring_pattern -horizontal_layer M1    -horizontal_width {1.5} -horizontal_spacing {0.5}    -vertical_layer M2 -vertical_width {1.5} -vertical_spacing {0.5}
+Information: The command 'create_pg_ring_pattern' cleared the undo history. (UNDO-016)
+Successfully create PG ring pattern ring_pattern.
+icc2_shell> set_pg_strategy core_ring    -pattern {{name: ring_pattern}    {nets: {VDD VSS}} {offset: {0.5 0.5}}} -core
+Successfully set PG strategy core_ring.
+icc2_shell> compile_pg -strategies core_ring
+Sanity check for inputs.
+No strategy-level via rule is specified, the default rule will be applied.
+Automatic PG net connection through connect_pg_net is disabled.
+Updating PG strategies.
+Updating strategy core_ring.
+Loading library and design information.
+Number of Standard Cells: 0
+Number of Hard Macros: 0
+Number of Pads: 0
+Creating rings.
+Creating via connection between strategies and existing shapes.
+Via DRC checking runtime 0.00 seconds.
+via connection runtime: 0 seconds.
+Removing dangling/floating wire/vias after DRC check.
+Start iteration 1:
+Checking potential dangling/floating power plan wires.
+Checking dangling/floating vias inside strategy core_ring.
+Checking 8 stacked vias:0% 10% 20% 30% 50% 60% 70% 80% 100%
+Finish removing all dangling or floating wires and vias.
+Commiting wires and vias.
+Committed 8 wires.
+Committing wires takes 0.00 seconds.
+Committed 8 vias.
+Committed 0 wires for via creation.
+Committing vias takes 0.00 seconds.
+Overall PG creation runtime: 0 seconds.
+Successfully compiled PG.
+Overall runtime: 0 seconds.
+1
+icc2_shell> connect_pg_net -automatic
+****************************************
+Report : Power/Ground Connection Summary
+Design : full_adder
+Version: U-2022.12
+Date   : Wed Apr 26 22:05:42 2023
+****************************************
+P/G net name                  P/G pin count(previous/current)
+--------------------------------------------------------------------------------
+Power net VDD                 3/3
+Ground net VSS                3/3
+--------------------------------------------------------------------------------
+Information: connections of 0 power/ground pin(s) are created or changed.
+1
+icc2_shell> create_pg_mesh_pattern mesh_pattern -layers { {{horizontal_layer: M1} {width: 0.75} {pitch: 30} {spacing: interleaving}}  {{vertical_layer: M2} {width: 0.84} {pitch: 33.6} {spacing: interleaving}} }
+Information: The command 'create_pg_wire_pattern' cleared the undo history. (UNDO-016)
+Successfully create mesh pattern mesh_pattern.
+1
+icc2_shell> set_pg_strategy mesh_strategy -polygon {{0.000 0.000} {14.408 13.344}} -pattern {{pattern: mesh_pattern}{nets: {VDD VSS}}} -blockage {macros: all}
+No placed macro is found in: all .
+This blockage constraint will be ignored.
+Successfully set PG strategy mesh_strategy.
+icc2_shell> create_pg_std_cell_conn_pattern std_cell_pattern
+Successfully create standard cell rail pattern std_cell_pattern.
+icc2_shell> set_pg_strategy std_cell_strategy -polygon {{0.000 0.000} {14.408 13.344}} -pattern {{pattern: std_cell_pattern}{nets: {VDD VSS}}}
+Successfully set PG strategy std_cell_strategy.
+icc2_shell> compile_pg -ignore_via_drc
+Sanity check for inputs.
+No strategy is specified, all the pre-defined strategies are used to create PG: core_ring mesh_strategy std_cell_strategy
+No strategy-level via rule is specified, the default rule will be applied.
+Automatic PG net connection through connect_pg_net is disabled.
+Updating PG strategies.
+Updating strategy core_ring.
+Updating strategy mesh_strategy.
+No placed macro is found in: all .
+This blockage constraint will be ignored.
+Updating strategy std_cell_strategy.
+Loading library and design information.
+Number of Standard Cells: 0
+Number of Hard Macros: 0
+Number of Pads: 0
+Creating rings.
+Creating straps and vias in power plan.
+Creating wire shapes for strategies mesh_strategy .
+Creating wire shapes runtime: 0 seconds
+Blockage cutting and DRC fixing for wire shapes for strategies mesh_strategy .
+Creating 0 wires after DRC fixing.
+Wire DRC checking runtime 0.00 seconds.
+Creating via shapes for strategies mesh_strategy .
+Working on strategy mesh_strategy.
+Number of detected intersections: 0
+Total runtime of via shapes creation: 0 seconds
+Creating standard cell rails.
+Creating standard cell rails for strategy std_cell_strategy.
+DRC checking and fixing for standard cell rail strategy std_cell_strategy.
+Number of wires: 3
+Checking DRC for 3 wires:0% 30% 60% 100%
+Creating 3 wires after DRC fixing.
+Wire DRC checking runtime 0.00 seconds.
+Creating via connection between strategies and existing shapes.
+via connection runtime: 0 seconds.
+Commiting wires and vias.
+Committed 11 wires.
+Committing wires takes 0.00 seconds.
+Committed 28 vias.
+Committed 0 wires for via creation.
+Committing vias takes 0.00 seconds.
+Overall PG creation runtime: 0 seconds.
+Successfully compiled PG.
+Overall runtime: 0 seconds.
+1
+icc2_shell> connect_pg_net -automatic
+****************************************
+Report : Power/Ground Connection Summary
+Design : full_adder
+Version: U-2022.12
+Date   : Wed Apr 26 22:05:45 2023
+****************************************
+P/G net name                  P/G pin count(previous/current)
+--------------------------------------------------------------------------------
+Power net VDD                 3/3
+Ground net VSS                3/3
+--------------------------------------------------------------------------------
+Information: connections of 0 power/ground pin(s) are created or changed.
+1
+icc2_shell> create_pg_mesh_pattern mesh_pattern -layers { {{horizontal_layer: M1} {width: 0.75} {pitch: 30} {spacing: interleaving}}  {{vertical_layer: M2} {width: 0.84} {pitch: 33.6} {spacing: interleaving}} }
+Information: The command 'create_pg_wire_pattern' cleared the undo history. (UNDO-016)
+Pattern mesh_pattern exists and is re-defined.
+Successfully create mesh pattern mesh_pattern.
+1
+icc2_shell> set_pg_strategy mesh_strategy -polygon {{0.000 0.000} {14.408 13.344}} -pattern {{pattern: mesh_pattern}{nets: {VDD VSS}}} -blockage {macros: all}
+No placed macro is found in: all .
+This blockage constraint will be ignored.
+Strategy mesh_strategy exists and is re-defined for the current design.
+Successfully set PG strategy mesh_strategy.
+icc2_shell> create_pg_std_cell_conn_pattern std_cell_pattern
+Pattern std_cell_pattern exists and is re-defined.
+Successfully create standard cell rail pattern std_cell_pattern.
+icc2_shell> set_pg_strategy std_cell_strategy -polygon {{0.000 0.000} {14.408 13.344}} -pattern {{pattern: std_cell_pattern}{nets: {VDD VSS}}}
+Strategy std_cell_strategy exists and is re-defined for the current design.
+Successfully set PG strategy std_cell_strategy.
+icc2_shell> compile_pg -ignore_via_drc
+Sanity check for inputs.
+No strategy is specified, all the pre-defined strategies are used to create PG: core_ring mesh_strategy std_cell_strategy
+No strategy-level via rule is specified, the default rule will be applied.
+Automatic PG net connection through connect_pg_net is disabled.
+Updating PG strategies.
+Updating strategy core_ring.
+Updating strategy mesh_strategy.
+No placed macro is found in: all .
+This blockage constraint will be ignored.
+Updating strategy std_cell_strategy.
+Loading library and design information.
+Number of Standard Cells: 0
+Number of Hard Macros: 0
+Number of Pads: 0
+Creating rings.
+Creating straps and vias in power plan.
+Creating wire shapes for strategies mesh_strategy .
+Creating wire shapes runtime: 0 seconds
+Blockage cutting and DRC fixing for wire shapes for strategies mesh_strategy .
+Creating 0 wires after DRC fixing.
+Wire DRC checking runtime 0.00 seconds.
+Creating via shapes for strategies mesh_strategy .
+Working on strategy mesh_strategy.
+Number of detected intersections: 0
+Total runtime of via shapes creation: 0 seconds
+Creating standard cell rails.
+Creating standard cell rails for strategy std_cell_strategy.
+DRC checking and fixing for standard cell rail strategy std_cell_strategy.
+Number of wires: 3
+Checking DRC for 3 wires:0% 30% 60% 100%
+Creating 3 wires after DRC fixing.
+Wire DRC checking runtime 0.00 seconds.
+Creating via connection between strategies and existing shapes.
+via connection runtime: 0 seconds.
+Commiting wires and vias.
+Committed 11 wires.
+Committing wires takes 0.00 seconds.
+Committed 34 vias.
+Committed 0 wires for via creation.
+Committing vias takes 0.00 seconds.
+Overall PG creation runtime: 0 seconds.
+Successfully compiled PG.
+Overall runtime: 0 seconds.
+1
+icc2_shell> 
+Successfully removed 30 route shapes, which 0 are no-net shapes.
+Remove no route shapes with specified net types and shape uses.
+Remove no route shapes with specified net types and shape uses.
+Error: Failed to perform undo since some PG shapes may have been removed. (PGR-082)
+Error: Failed to perform undo since some PG shapes may have been removed. (PGR-082)
+Error: Failed to perform undo since some PG shapes may have been removed. (PGR-082)
+Error: Failed to perform undo since some PG shapes may have been removed. (PGR-082)
+icc2_shell> connect_pg_net -automatic
+****************************************
+Report : Power/Ground Connection Summary
+Design : full_adder
+Version: U-2022.12
+Date   : Wed Apr 26 22:12:56 2023
+****************************************
+P/G net name                  P/G pin count(previous/current)
+--------------------------------------------------------------------------------
+Power net VDD                 3/3
+Ground net VSS                3/3
+--------------------------------------------------------------------------------
+Information: connections of 0 power/ground pin(s) are created or changed.
+1
+icc2_shell> create_pg_mesh_pattern mesh_pattern -layers { {{horizontal_layer: M1} {width: 0.75} {pitch: 30} {spacing: interleaving}}  {{vertical_layer: M2} {width: 0.84} {pitch: 33.6} {spacing: interleaving}} }
+Information: The command 'create_pg_wire_pattern' cleared the undo history. (UNDO-016)
+Pattern mesh_pattern exists and is re-defined.
+Successfully create mesh pattern mesh_pattern.
+1
+icc2_shell> set_pg_strategy mesh_strategy -polygon {{0.438 0.769} {14.020 12.919}} -pattern {{pattern: mesh_pattern}{nets: {VDD VSS}}} -blockage {macros: all}
+No placed macro is found in: all .
+This blockage constraint will be ignored.
+Strategy mesh_strategy exists and is re-defined for the current design.
+Successfully set PG strategy mesh_strategy.
+icc2_shell> create_pg_std_cell_conn_pattern std_cell_pattern
+Pattern std_cell_pattern exists and is re-defined.
+Successfully create standard cell rail pattern std_cell_pattern.
+icc2_shell> set_pg_strategy std_cell_strategy -polygon {{0.438 0.769} {14.020 12.919}} -pattern {{pattern: std_cell_pattern}{nets: {VDD VSS}}}
+Strategy std_cell_strategy exists and is re-defined for the current design.
+Successfully set PG strategy std_cell_strategy.
+icc2_shell> compile_pg -ignore_via_drc
+Sanity check for inputs.
+No strategy is specified, all the pre-defined strategies are used to create PG: core_ring mesh_strategy std_cell_strategy
+No strategy-level via rule is specified, the default rule will be applied.
+Automatic PG net connection through connect_pg_net is disabled.
+Updating PG strategies.
+Updating strategy core_ring.
+Updating strategy mesh_strategy.
+No placed macro is found in: all .
+This blockage constraint will be ignored.
+Updating strategy std_cell_strategy.
+Loading library and design information.
+Number of Standard Cells: 0
+Number of Hard Macros: 0
+Number of Pads: 0
+Creating rings.
+Creating straps and vias in power plan.
+Creating wire shapes for strategies mesh_strategy .
+Creating wire shapes runtime: 0 seconds
+Blockage cutting and DRC fixing for wire shapes for strategies mesh_strategy .
+Creating 0 wires after DRC fixing.
+Wire DRC checking runtime 0.00 seconds.
+Creating via shapes for strategies mesh_strategy .
+Working on strategy mesh_strategy.
+Number of detected intersections: 0
+Total runtime of via shapes creation: 0 seconds
+Creating standard cell rails.
+Creating standard cell rails for strategy std_cell_strategy.
+DRC checking and fixing for standard cell rail strategy std_cell_strategy.
+Number of wires: 3
+Checking DRC for 3 wires:0% 30% 60% 100%
+Creating 3 wires after DRC fixing.
+Wire DRC checking runtime 0.00 seconds.
+Creating via connection between strategies and existing shapes.
+via connection runtime: 0 seconds.
+Commiting wires and vias.
+Committed 11 wires.
+Committing wires takes 0.00 seconds.
+Committed 28 vias.
+Committed 0 wires for via creation.
+Committing vias takes 0.00 seconds.
+Overall PG creation runtime: 0 seconds.
+Successfully compiled PG.
+Overall runtime: 0 seconds.
+1
+icc2_shell> connect_pg_net -automatic
+****************************************
+Report : Power/Ground Connection Summary
+Design : full_adder
+Version: U-2022.12
+Date   : Wed Apr 26 22:12:57 2023
+****************************************
+P/G net name                  P/G pin count(previous/current)
+--------------------------------------------------------------------------------
+Power net VDD                 3/3
+Ground net VSS                3/3
+--------------------------------------------------------------------------------
+Information: connections of 0 power/ground pin(s) are created or changed.
+1
+icc2_shell> create_pg_mesh_pattern mesh_pattern -layers { {{horizontal_layer: M1} {width: 0.75} {pitch: 30} {spacing: interleaving}}  {{vertical_layer: M2} {width: 0.84} {pitch: 33.6} {spacing: interleaving}} }
+Information: The command 'create_pg_wire_pattern' cleared the undo history. (UNDO-016)
+Pattern mesh_pattern exists and is re-defined.
+Successfully create mesh pattern mesh_pattern.
+1
+icc2_shell> set_pg_strategy mesh_strategy -polygon {{0.438 0.769} {14.020 12.919}} -pattern {{pattern: mesh_pattern}{nets: {VDD VSS}}} -blockage {macros: all}
+No placed macro is found in: all .
+This blockage constraint will be ignored.
+Strategy mesh_strategy exists and is re-defined for the current design.
+Successfully set PG strategy mesh_strategy.
+icc2_shell> create_pg_std_cell_conn_pattern std_cell_pattern
+Pattern std_cell_pattern exists and is re-defined.
+Successfully create standard cell rail pattern std_cell_pattern.
+icc2_shell> set_pg_strategy std_cell_strategy -polygon {{0.438 0.769} {14.020 12.919}} -pattern {{pattern: std_cell_pattern}{nets: {VDD VSS}}}
+Strategy std_cell_strategy exists and is re-defined for the current design.
+Successfully set PG strategy std_cell_strategy.
+icc2_shell> compile_pg -ignore_via_drc
+Sanity check for inputs.
+No strategy is specified, all the pre-defined strategies are used to create PG: core_ring mesh_strategy std_cell_strategy
+No strategy-level via rule is specified, the default rule will be applied.
+Automatic PG net connection through connect_pg_net is disabled.
+Updating PG strategies.
+Updating strategy core_ring.
+Updating strategy mesh_strategy.
+No placed macro is found in: all .
+This blockage constraint will be ignored.
+Updating strategy std_cell_strategy.
+Loading library and design information.
+Number of Standard Cells: 0
+Number of Hard Macros: 0
+Number of Pads: 0
+Creating rings.
+Creating straps and vias in power plan.
+Creating wire shapes for strategies mesh_strategy .
+Creating wire shapes runtime: 0 seconds
+Blockage cutting and DRC fixing for wire shapes for strategies mesh_strategy .
+Creating 0 wires after DRC fixing.
+Wire DRC checking runtime 0.00 seconds.
+Creating via shapes for strategies mesh_strategy .
+Working on strategy mesh_strategy.
+Number of detected intersections: 0
+Total runtime of via shapes creation: 0 seconds
+Creating standard cell rails.
+Creating standard cell rails for strategy std_cell_strategy.
+DRC checking and fixing for standard cell rail strategy std_cell_strategy.
+Number of wires: 3
+Checking DRC for 3 wires:0% 30% 60% 100%
+Creating 3 wires after DRC fixing.
+Wire DRC checking runtime 0.00 seconds.
+Creating via connection between strategies and existing shapes.
+via connection runtime: 0 seconds.
+Commiting wires and vias.
+Committed 11 wires.
+Committing wires takes 0.00 seconds.
+Committed 34 vias.
+Committed 0 wires for via creation.
+Committing vias takes 0.00 seconds.
+Overall PG creation runtime: 0 seconds.
+Successfully compiled PG.
+Overall runtime: 0 seconds.
+1
+icc2_shell> 
+Successfully removed 30 route shapes, which 0 are no-net shapes.
+Remove no route shapes with specified net types and shape uses.
+Remove no route shapes with specified net types and shape uses.
+Remove no route shapes with specified net types and shape uses.
+Remove no route shapes with specified net types and shape uses.
+Remove no route shapes with specified net types and shape uses.
+Remove no route shapes with specified net types and shape uses.
+icc2_shell> set_app_options -name plan.pins.incremental -value true -block [current_block]
+plan.pins.incremental true
+icc2_shell> set_app_options -name plan.pins.layer_range -value 5 -block [current_block]
+plan.pins.layer_range 5
+icc2_shell> set_app_options -name plan.pins.pin_range -value 10.00 -block [current_block]
+plan.pins.pin_range 10
+icc2_shell> place_pins -self -ports {VDD VSS a b ci co sum}
+Information: Starting 'place_pins' (FLW-8000)
+Information: Time: 2023-04-26 22:19:25 / Session: 1.15 hr / Command: 0.00 hr / Memory: 570 MB (FLW-8100)
+Load DB...
+CPU Time for load db: 00:00:00.00u 00:00:00.00s 00:00:00.00e: 
+
+Printing app options for 'plan.pins*':
+plan.pins.incremental                         :  true                
+plan.pins.pin_range                           :  10                  
+plan.pins.layer_range                         :  5                   
+
+Min routing layer: M1
+Max routing layer: MRDL
+
+
+CPU Time for Top Level Pre-Route Processing: 00:00:00.00u 00:00:00.00s 00:00:00.00e: 
+Warning: found large number of corner keepout wiretracks on side 1 of block full_adder on layer M9 and there is no enough wire tracks available on this side (DPPA-096)
+Warning: found large number of corner keepout wiretracks on side 2 of block full_adder on layer MRDL and there is no enough wire tracks available on this side (DPPA-096)
+Warning: found large number of corner keepout wiretracks on side 3 of block full_adder on layer M9 and there is no enough wire tracks available on this side (DPPA-096)
+Warning: found large number of corner keepout wiretracks on side 4 of block full_adder on layer MRDL and there is no enough wire tracks available on this side (DPPA-096)
+Number of block ports: 5
+Number of block pin locations assigned from router: 0
+CPU Time for Pin Preparation: 00:00:00.00u 00:00:00.00s 00:00:00.00e: 
+Number of PG ports on blocks: 0
+Number of pins created: 5
+CPU Time for Pin Creation: 00:00:00.00u 00:00:00.00s 00:00:00.00e: 
+Total Pin Placement CPU Time: 00:00:00.00u 00:00:00.00s 00:00:00.00e: 
+Information: Ending 'place_pins' (FLW-8001)
+Information: Time: 2023-04-26 22:19:25 / Session: 1.15 hr / Command: 0.00 hr / Memory: 570 MB (FLW-8100)
+1
+icc2_shell> save_lib -all
+Saving all libraries...
+1
+icc2_shell> set_app_options -name place.coarse.fix_hard_macros -value false
+place.coarse.fix_hard_macros false
+icc2_shell> set_app_options -name plan.place.auto_create_blockages -value auto
+plan.place.auto_create_blockages auto
+icc2_shell> create_placement -floorplan -timing_driven
+Information: Starting 'create_placement' (FLW-8000)
+Information: Time: 2023-04-26 22:22:02 / Session: 1.20 hr / Command: 0.00 hr / Memory: 570 MB (FLW-8100)
+Creating appropriate block views (if needed)...
+Multi-Processing Summary
+  Max number of cores for parent process: 1; hostname: computerlab-pc4
+  No distributed processing
+Command Option Settings Summary
+  -floorplan -effort medium
+Information: All hard macros are fixed, no hard macro placement is done. (DPP-416)
+Info: auto generated blockages in block full_adder not created because they will likely cause over utilization.
+Placing top level std cells.
+Warning: No valid clocks available in design 'full_adder'. Setting clock frequency to 1 GHz. (POW-034)
+Warning: No valid clocks available in design 'full_adder'. Setting clock frequency to 1 GHz. (POW-034)
+Warning: no valid parasitic for default corner(LATE) (NEX-018)
+Warning: no valid parasitic for default corner(LATE) (NEX-018)
+Warning: no valid parasitic for default corner(LATE) (NEX-018)
+Warning: no valid parasitic for default corner(LATE) (NEX-018)
+Warning: No valid clocks available in design 'full_adder'. Setting clock frequency to 1 GHz. (POW-034)
+Warning: No valid clocks available in design 'full_adder'. Setting clock frequency to 1 GHz. (POW-034)
+Warning: No valid clocks available in design 'full_adder'. Setting clock frequency to 1 GHz. (POW-034)
+Warning: No valid clocks available in design 'full_adder'. Setting clock frequency to 1 GHz. (POW-034)
+coarse place 0% done.
+coarse place 100% done.
+Running block placement.
+Running timing driven standard cell placement
+No editable block found.
+Running virtual optimization on full netlist ...
+Cannot create estimated_corner because current_corner is the default corner without user settings.Creating appropriate block views (if needed)...
+Info: auto generated blockages in block full_adder not created because they will likely cause over utilization.
+Placing top level std cells.
+Warning: No valid clocks available in design 'full_adder'. Setting clock frequency to 1 GHz. (POW-034)
+Warning: No valid clocks available in design 'full_adder'. Setting clock frequency to 1 GHz. (POW-034)
+Warning: no valid parasitic for default corner(LATE) (NEX-018)
+Warning: no valid parasitic for default corner(LATE) (NEX-018)
+Warning: no valid parasitic for default corner(LATE) (NEX-018)
+Warning: no valid parasitic for default corner(LATE) (NEX-018)
+Warning: No valid clocks available in design 'full_adder'. Setting clock frequency to 1 GHz. (POW-034)
+Warning: No valid clocks available in design 'full_adder'. Setting clock frequency to 1 GHz. (POW-034)
+coarse place 0% done.
+coarse place 100% done.
+Running block placement.
+Floorplan placement done.
+****************************************
+Report : report_placement
+Design : full_adder
+Version: U-2022.12
+Date   : Wed Apr 26 22:22:03 2023
+****************************************
+  ==================
+  Note: Ignoring violations of fixed cells or between fixed pairs of cells. 
+        To include violations of / between fixed cells, disable -ignore_fixed. 
+  ==================
+
+  Wire length report (all)
+  ==================
+  wire length in design full_adder: 48.617 microns.
+  wire length in design full_adder (see through blk pins): 48.617 microns.
+  ------------------
+  Total wire length: 48.617 microns.
+
+  Physical hierarchy violations report
+  ====================================
+  Violations in design full_adder:
+     0 cells have placement violation.
+  ------------------------------------
+  Total 0 cells have placement violation.
+
+  Voltage area violations report
+  ====================================
+  Voltage area placement violations in design full_adder:
+     0 cells placed outside the voltage area which they belong to.
+  ------------------------------------
+  Total 0 macro cells placed outside the voltage area which they belong to.
+
+  Hard macro to hard macro overlap report
+  =======================================
+  HM to HM overlaps in design full_adder: 0
+  ---------------------------------------
+  Total hard macro to hard macro overlaps: 0
+
+Information: Default error view full_adder_dpplace.err is created in GUI error browser. (DPP-054)
+Information: Elapsed time for create_placement excluding pending time: 00:00:00.13. (DPUI-902)
+Information: CPU time for create_placement : 00:00:00.10. (DPUI-903)
+Information: Peak memory usage for create_placement : 595 MB. (DPUI-904)
+Information: Ending 'create_placement' (FLW-8001)
+Information: Time: 2023-04-26 22:22:03 / Session: 1.20 hr / Command: 0.00 hr / Memory: 596 MB (FLW-8100)
+1
+icc2_shell> save_lib -all
+Saving all libraries...
+1
+icc2_shell> #clock_opt
+icc2_shell> route_auto -max_detail_route_iterations 5
+Information: Starting 'route_auto' (FLW-8000)
+Information: Time: 2023-04-26 22:23:44 / Session: 1.22 hr / Command: 0.00 hr / Memory: 596 MB (FLW-8100)
+Warning: max_routing_layer is not set in the design.
+Cell Min-Routing-Layer = M1
+Cell Max-Routing-Layer = MRDL
+Turn off antenna since no rule is specified
+Information: Option route.detail.force_end_on_preferred_grid will be ignored since none of the layers have preferred grid. (ZRT-703)
+Warning: Cannot find a default contact code for layer CO. (ZRT-022)
+Warning: Port VDD of cell full_adder
+        is unplaced.  This may impact routing result. (ZRT-740)
+Warning: Port VSS of cell full_adder
+        is unplaced.  This may impact routing result. (ZRT-740)
+Warning: Ignore 2 top cell ports with no pins. (ZRT-027)
+Info: number of net_type_blockage: 0 
+Information: Via ladder engine would be activated for pattern must join connection in certain commands. Please refer to man-page for the command list. (ZRT-619)
+Information: When applicable Min-max layer allow_pin_connection mode will allow paths of length 3.55 outside the layer range. (ZRT-707)
+Information: When applicable Min-max layer allow_pin_connection mode will allow paths of length 3.55 outside the layer range on clock nets. (ZRT-718)
+Information: When applicable layer based tapering will taper up to 0.00 in distance from the pin. (ZRT-706)
+
+    Found 0 via ladders to verify.
+
+VIA LADDER INFO: found 0 via ladder DRCs across 0 nets.
+Updating the database ...
+
+    Via ladders will be inserted on 0 of 0 ports with via ladder constraints.
+
+Updating the database ...
+Start Global Route ... 
+[Init] Elapsed real time: 0:00:00 
+[Init] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Init] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[Init] Total (MB): Used   25  Alloctr   25  Proc 6910 
+Printing options for 'route.common.*'
+
+Printing options for 'route.global.*'
+
+Begin global routing.
+Constructing data structure ...
+Design statistics:
+Design Bounding Box (0.00um,0.00um,14.41um,13.34um)
+Number of routing layers = 10
+layer M1, dir Hor, min width = 0.05um, min space = 0.05um pitch = 0.152um
+layer M2, dir Ver, min width = 0.056um, min space = 0.056um pitch = 0.152um
+layer M3, dir Hor, min width = 0.056um, min space = 0.056um pitch = 0.304um
+layer M4, dir Ver, min width = 0.056um, min space = 0.056um pitch = 0.304um
+layer M5, dir Hor, min width = 0.056um, min space = 0.056um pitch = 0.608um
+layer M6, dir Ver, min width = 0.056um, min space = 0.056um pitch = 0.608um
+layer M7, dir Hor, min width = 0.056um, min space = 0.056um pitch = 1.216um
+layer M8, dir Ver, min width = 0.056um, min space = 0.056um pitch = 1.216um
+layer M9, dir Hor, min width = 0.16um, min space = 0.16um pitch = 2.432um
+layer MRDL, dir Ver, min width = 2um, min space = 2um pitch = 4.864um
+Current Stage stats:
+[End of Build Tech Data] Elapsed real time: 0:00:00 
+[End of Build Tech Data] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Build Tech Data] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Build Tech Data] Total (MB): Used   29  Alloctr   30  Proc 6910 
+Net statistics:
+Total number of nets     = 8
+Number of nets to route  = 6
+2 nets are fully connected,
+ of which 2 are detail routed and 0 are global routed.
+Net length statistics: 
+Net Count(Ignore Fully Rted) 6, Total Half Perimeter Wire Length (HPWL) 53 microns
+HPWL   0 ~   50 microns: Net Count        6     Total HPWL           53 microns
+HPWL  50 ~  100 microns: Net Count        0     Total HPWL            0 microns
+HPWL 100 ~  200 microns: Net Count        0     Total HPWL            0 microns
+HPWL 200 ~  300 microns: Net Count        0     Total HPWL            0 microns
+HPWL 300 ~  400 microns: Net Count        0     Total HPWL            0 microns
+HPWL 400 ~  500 microns: Net Count        0     Total HPWL            0 microns
+HPWL 500 ~  600 microns: Net Count        0     Total HPWL            0 microns
+HPWL 600 ~  700 microns: Net Count        0     Total HPWL            0 microns
+HPWL 700 ~  800 microns: Net Count        0     Total HPWL            0 microns
+HPWL 800 ~  900 microns: Net Count        0     Total HPWL            0 microns
+HPWL 900 ~ 1000 microns: Net Count        0     Total HPWL            0 microns
+HPWL     > 1000 microns: Net Count        0     Total HPWL            0 microns
+Current Stage stats:
+[End of Build All Nets] Elapsed real time: 0:00:00 
+[End of Build All Nets] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Build All Nets] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Build All Nets] Total (MB): Used   29  Alloctr   30  Proc 6910 
+Number of partitions: 1 (1 x 1)
+Size of partitions: 9 gCells x 8 gCells
+Average gCell capacity  5.04     on layer (1)    M1
+Average gCell capacity  5.93     on layer (2)    M2
+Average gCell capacity  5.22     on layer (3)    M3
+Average gCell capacity  5.11     on layer (4)    M4
+Average gCell capacity  2.62     on layer (5)    M5
+Average gCell capacity  2.44     on layer (6)    M6
+Average gCell capacity  1.25     on layer (7)    M7
+Average gCell capacity  1.22     on layer (8)    M8
+Average gCell capacity  0.50     on layer (9)    M9
+Average gCell capacity  0.11     on layer (10)   MRDL
+Average number of tracks per gCell 11.12         on layer (1)    M1
+Average number of tracks per gCell 10.56         on layer (2)    M2
+Average number of tracks per gCell 5.62  on layer (3)    M3
+Average number of tracks per gCell 5.44  on layer (4)    M4
+Average number of tracks per gCell 3.00  on layer (5)    M5
+Average number of tracks per gCell 2.89  on layer (6)    M6
+Average number of tracks per gCell 1.62  on layer (7)    M7
+Average number of tracks per gCell 1.56  on layer (8)    M8
+Average number of tracks per gCell 1.00  on layer (9)    M9
+Average number of tracks per gCell 0.33  on layer (10)   MRDL
+Number of gCells = 720
+Current Stage stats:
+[End of Build Congestion Map] Elapsed real time: 0:00:00 
+[End of Build Congestion Map] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Build Congestion Map] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Build Congestion Map] Total (MB): Used   29  Alloctr   30  Proc 6910 
+Current Stage stats:
+[End of Add Nets Demand] Elapsed real time: 0:00:00 
+[End of Add Nets Demand] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Add Nets Demand] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Add Nets Demand] Total (MB): Used   29  Alloctr   30  Proc 6910 
+Number of user frozen nets = 0
+Total stats:
+[End of Build Data] Elapsed real time: 0:00:00 
+[End of Build Data] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Build Data] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Build Data] Total (MB): Used   29  Alloctr   30  Proc 6910 
+Number of partitions: 1 (1 x 1)
+Size of partitions: 9 gCells x 8 gCells
+Current Stage stats:
+[End of Blocked Pin Detection] Elapsed real time: 0:00:00 
+[End of Blocked Pin Detection] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Blocked Pin Detection] Stage (MB): Used  176  Alloctr  176  Proc  174 
+[End of Blocked Pin Detection] Total (MB): Used  205  Alloctr  206  Proc 7084 
+Information: Using 1 threads for routing. (ZRT-444)
+Information: Multiple gcell levels ON
+Information: Buffer distance is estimated to be ~862.0000um (515 gCells)
+
+Start GR phase 0
+Number of partitions: 1 (1 x 1)
+Size of partitions: 9 gCells x 8 gCells
+[rtAllBotParts] Elapsed real time: 0:00:00 
+[rtAllBotParts] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[rtTop] Elapsed real time: 0:00:00 
+[rtTop] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+Current Stage stats:
+[End of Initial Routing] Elapsed real time: 0:00:00 
+[End of Initial Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Initial Routing] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Initial Routing] Total (MB): Used  205  Alloctr  206  Proc 7084 
+Initial. Routing result:
+Initial. Both Dirs: Dmd-Cap  =     0 Max = 0 GRCs =     0 (0.00%)
+Initial. H routing: Dmd-Cap  =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. V routing: Dmd-Cap  =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. Both Dirs: Overflow =     0 Max = 1 GRCs =     1 (0.69%)
+Initial. H routing: Overflow =     0 Max = 1 (GRCs =  1) GRCs =     1 (1.39%)
+Initial. V routing: Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. M1         Overflow =     0 Max = 1 (GRCs =  1) GRCs =     1 (1.39%)
+Initial. M2         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. M3         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. M4         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. M5         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. M6         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. M7         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. M8         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. M9         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. MRDL       Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+
+Initial. Total Wire Length = 46.81
+Initial. Layer M1 wire length = 1.98
+Initial. Layer M2 wire length = 23.06
+Initial. Layer M3 wire length = 21.77
+Initial. Layer M4 wire length = 0.00
+Initial. Layer M5 wire length = 0.00
+Initial. Layer M6 wire length = 0.00
+Initial. Layer M7 wire length = 0.00
+Initial. Layer M8 wire length = 0.00
+Initial. Layer M9 wire length = 0.00
+Initial. Layer MRDL wire length = 0.00
+Initial. Total Number of Contacts = 23
+Initial. Via VIA12SQ_C count = 13
+Initial. Via VIA23SQ_C count = 10
+Initial. Via VIA34SQ_C count = 0
+Initial. Via VIA45SQ_C count = 0
+Initial. Via VIA56SQ_C count = 0
+Initial. Via VIA67SQ_C count = 0
+Initial. Via VIA78SQ_C count = 0
+Initial. Via VIA89_C count = 0
+Initial. Via VIA9RDL count = 0
+Initial. completed.
+
+Start GR phase 1
+Wed Apr 26 22:23:44 2023
+Number of partitions: 1 (1 x 1)
+Size of partitions: 9 gCells x 8 gCells
+[rtAllParts] Elapsed real time: 0:00:00 
+[rtAllParts] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+Current Stage stats:
+[End of Phase1 Routing] Elapsed real time: 0:00:00 
+[End of Phase1 Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Phase1 Routing] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Phase1 Routing] Total (MB): Used  205  Alloctr  206  Proc 7084 
+phase1. Routing result:
+phase1. Both Dirs: Dmd-Cap  =     0 Max = 0 GRCs =     0 (0.00%)
+phase1. H routing: Dmd-Cap  =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. V routing: Dmd-Cap  =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. Both Dirs: Overflow =     0 Max = 1 GRCs =     1 (0.69%)
+phase1. H routing: Overflow =     0 Max = 1 (GRCs =  1) GRCs =     1 (1.39%)
+phase1. V routing: Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M1         Overflow =     0 Max = 1 (GRCs =  1) GRCs =     1 (1.39%)
+phase1. M2         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M3         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M4         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M5         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M6         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M7         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M8         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M9         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. MRDL       Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+
+phase1. Total Wire Length = 45.79
+phase1. Layer M1 wire length = 1.98
+phase1. Layer M2 wire length = 23.06
+phase1. Layer M3 wire length = 20.75
+phase1. Layer M4 wire length = 0.00
+phase1. Layer M5 wire length = 0.00
+phase1. Layer M6 wire length = 0.00
+phase1. Layer M7 wire length = 0.00
+phase1. Layer M8 wire length = 0.00
+phase1. Layer M9 wire length = 0.00
+phase1. Layer MRDL wire length = 0.00
+phase1. Total Number of Contacts = 23
+phase1. Via VIA12SQ_C count = 13
+phase1. Via VIA23SQ_C count = 10
+phase1. Via VIA34SQ_C count = 0
+phase1. Via VIA45SQ_C count = 0
+phase1. Via VIA56SQ_C count = 0
+phase1. Via VIA67SQ_C count = 0
+phase1. Via VIA78SQ_C count = 0
+phase1. Via VIA89_C count = 0
+phase1. Via VIA9RDL count = 0
+phase1. completed.
+
+Start GR phase 2
+Wed Apr 26 22:23:44 2023
+Number of partitions: 1 (1 x 1)
+Size of partitions: 9 gCells x 8 gCells
+[rtAllParts] Elapsed real time: 0:00:00 
+[rtAllParts] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[updNetsDmd] Elapsed real time: 0:00:00 
+[updNetsDmd] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+Current Stage stats:
+[End of Phase2 Routing] Elapsed real time: 0:00:00 
+[End of Phase2 Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Phase2 Routing] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Phase2 Routing] Total (MB): Used  205  Alloctr  206  Proc 7084 
+phase2. Routing result:
+phase2. Both Dirs: Dmd-Cap  =     0 Max = 0 GRCs =     0 (0.00%)
+phase2. H routing: Dmd-Cap  =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. V routing: Dmd-Cap  =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. Both Dirs: Overflow =     0 Max = 0 GRCs =     0 (0.00%)
+phase2. H routing: Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. V routing: Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M1         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M2         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M3         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M4         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M5         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M6         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M7         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M8         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M9         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. MRDL       Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+
+phase2. Total Wire Length = 45.79
+phase2. Layer M1 wire length = 1.98
+phase2. Layer M2 wire length = 23.06
+phase2. Layer M3 wire length = 20.75
+phase2. Layer M4 wire length = 0.00
+phase2. Layer M5 wire length = 0.00
+phase2. Layer M6 wire length = 0.00
+phase2. Layer M7 wire length = 0.00
+phase2. Layer M8 wire length = 0.00
+phase2. Layer M9 wire length = 0.00
+phase2. Layer MRDL wire length = 0.00
+phase2. Total Number of Contacts = 23
+phase2. Via VIA12SQ_C count = 13
+phase2. Via VIA23SQ_C count = 10
+phase2. Via VIA34SQ_C count = 0
+phase2. Via VIA45SQ_C count = 0
+phase2. Via VIA56SQ_C count = 0
+phase2. Via VIA67SQ_C count = 0
+phase2. Via VIA78SQ_C count = 0
+phase2. Via VIA89_C count = 0
+phase2. Via VIA9RDL count = 0
+phase2. completed.
+[End of Whole Chip Routing] Elapsed real time: 0:00:00 
+[End of Whole Chip Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Whole Chip Routing] Stage (MB): Used  176  Alloctr  177  Proc  174 
+[End of Whole Chip Routing] Total (MB): Used  205  Alloctr  206  Proc 7084 
+
+Congestion utilization per direction:
+Average vertical track utilization   =  1.87 %
+Peak    vertical track utilization   = 15.00 %
+Average horizontal track utilization =  1.61 %
+Peak    horizontal track utilization = 33.33 %
+
+[End of Global Routing] Elapsed real time: 0:00:00 
+[End of Global Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Global Routing] Stage (MB): Used  176  Alloctr  176  Proc  174 
+[End of Global Routing] Total (MB): Used  205  Alloctr  206  Proc 7084 
+Updating congestion ...
+Updating congestion ...
+[End of dbOut] Elapsed real time: 0:00:00 
+[End of dbOut] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of dbOut] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of dbOut] Total (MB): Used   57  Alloctr   58  Proc 7084 
+
+Start track assignment
+
+Printing options for 'route.common.*'
+
+Printing options for 'route.track.*'
+
+Information: Using 1 threads for routing. (ZRT-444)
+
+[Track Assign: TA init] Elapsed real time: 0:00:00 
+[Track Assign: TA init] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Track Assign: TA init] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[Track Assign: TA init] Total (MB): Used   21  Alloctr   21  Proc 7084 
+
+Start initial assignment
+
+Assign Horizontal partitions, iteration 0 
+Routed partition 1/8        
+Routed partition 2/8        
+Routed partition 3/8        
+Routed partition 4/8        
+Routed partition 5/8        
+Routed partition 6/8        
+Routed partition 7/8        
+Routed partition 8/8        
+
+Assign Vertical partitions, iteration 0 
+Routed partition 1/9        
+Routed partition 2/9        
+Routed partition 3/9        
+Routed partition 4/9        
+Routed partition 5/9        
+Routed partition 6/9        
+Routed partition 7/9        
+Routed partition 8/9        
+Routed partition 9/9        
+
+Number of wires with overlap after iteration 0 = 16 of 49
+
+
+[Track Assign: Iteration 0] Elapsed real time: 0:00:00 
+[Track Assign: Iteration 0] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Track Assign: Iteration 0] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[Track Assign: Iteration 0] Total (MB): Used   21  Alloctr   21  Proc 7084 
+
+Reroute to fix overlaps (iter = 1)
+
+Assign Horizontal partitions, iteration 1 
+Routed partition 1/8        
+Routed partition 2/8        
+Routed partition 3/8        
+Routed partition 4/8        
+Routed partition 5/8        
+Routed partition 6/8        
+Routed partition 7/8        
+Routed partition 8/8        
+
+Assign Vertical partitions, iteration 1 
+Routed partition 1/9        
+Routed partition 2/9        
+Routed partition 3/9        
+Routed partition 4/9        
+Routed partition 5/9        
+Routed partition 6/9        
+Routed partition 7/9        
+Routed partition 8/9        
+Routed partition 9/9        
+
+[Track Assign: Iteration 1] Elapsed real time: 0:00:00 
+[Track Assign: Iteration 1] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Track Assign: Iteration 1] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[Track Assign: Iteration 1] Total (MB): Used   21  Alloctr   21  Proc 7084 
+
+Number of wires with overlap after iteration 1 = 4 of 33
+
+
+Wire length and via report:
+---------------------------
+Number of M1 wires: 1             : 0
+Number of M2 wires: 20           VIA12SQ_C: 12
+Number of M3 wires: 12           VIA23SQ_C: 15
+Number of M4 wires: 0            VIA34SQ_C: 0
+Number of M5 wires: 0            VIA45SQ_C: 0
+Number of M6 wires: 0            VIA56SQ_C: 0
+Number of M7 wires: 0            VIA67SQ_C: 0
+Number of M8 wires: 0            VIA78SQ_C: 0
+Number of M9 wires: 0            VIA89_C: 0
+Number of MRDL wires: 0                  VIA9RDL: 0
+Total number of wires: 33                vias: 27
+
+Total M1 wire length: 0.1
+Total M2 wire length: 26.3
+Total M3 wire length: 23.8
+Total M4 wire length: 0.0
+Total M5 wire length: 0.0
+Total M6 wire length: 0.0
+Total M7 wire length: 0.0
+Total M8 wire length: 0.0
+Total M9 wire length: 0.0
+Total MRDL wire length: 0.0
+Total wire length: 50.1
+
+Longest M1 wire length: 0.1
+Longest M2 wire length: 6.0
+Longest M3 wire length: 6.9
+Longest M4 wire length: 0.0
+Longest M5 wire length: 0.0
+Longest M6 wire length: 0.0
+Longest M7 wire length: 0.0
+Longest M8 wire length: 0.0
+Longest M9 wire length: 0.0
+Longest MRDL wire length: 0.0
+
+Warning: Shape {81670 60390 83024 60890} on layer M1 is not on min manufacturing grid. Snap it to {81670 60390 83030 60890}. The shape belongs to Net: b. (ZRT-543)
+
+[Track Assign: Done] Elapsed real time: 0:00:00 
+[Track Assign: Done] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Track Assign: Done] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[Track Assign: Done] Total (MB): Used   21  Alloctr   21  Proc 7084 
+Printing options for 'route.common.*'
+
+Printing options for 'route.detail.*'
+
+Printing options for 'route.auto_via_ladder.*'
+
+[Dr init] Elapsed real time: 0:00:00 
+[Dr init] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Dr init] Stage (MB): Used    9  Alloctr    9  Proc    0 
+[Dr init] Total (MB): Used   30  Alloctr   31  Proc 7084 
+Total number of nets = 8, of which 0 are not extracted
+Total number of open nets = 0, of which 0 are frozen
+Information: Using 1 threads for routing. (ZRT-444)
+Region based early termination has 1 candidate regions.
+Start DR iteration 0: uniform partition
+Routed  1/1 Partitions, Violations =    0
+
+DRC-SUMMARY:
+        @@@@@@@ TOTAL VIOLATIONS =      0
+
+[Iter 0] Elapsed real time: 0:00:00 
+[Iter 0] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Iter 0] Stage (MB): Used   67  Alloctr   68  Proc    0 
+[Iter 0] Total (MB): Used   89  Alloctr   89  Proc 7084 
+
+End DR iteration 0 with 1 parts
+
+Finish DR since reached 0 DRC
+
+[DR] Elapsed real time: 0:00:00 
+[DR] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[DR] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[DR] Total (MB): Used   21  Alloctr   21  Proc 7084 
+[DR: Done] Elapsed real time: 0:00:00 
+[DR: Done] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[DR: Done] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[DR: Done] Total (MB): Used   21  Alloctr   21  Proc 7084 
+
+DR finished with 0 open nets, of which 0 are frozen
+
+DR finished with 0 violations
+
+DRC-SUMMARY:
+        @@@@@@@ TOTAL VIOLATIONS =      0
+
+
+
+Total Wire Length =                    49 micron
+Total Number of Contacts =             25
+Total Number of Wires =                32
+Total Number of PtConns =              2
+Total Number of Routed Wires =       32
+Total Routed Wire Length =           49 micron
+Total Number of Routed Contacts =       25
+        Layer             M1 :          0 micron
+        Layer             M2 :         27 micron
+        Layer             M3 :         22 micron
+        Layer             M4 :          0 micron
+        Layer             M5 :          0 micron
+        Layer             M6 :          0 micron
+        Layer             M7 :          0 micron
+        Layer             M8 :          0 micron
+        Layer             M9 :          0 micron
+        Layer           MRDL :          0 micron
+        Via   VIA23SQ_C(rot) :         13
+        Via        VIA12SQ_C :         11
+        Via   VIA12SQ_C(rot) :          1
+
+ 
+Redundant via conversion report:
+--------------------------------
+
+  Total optimized via conversion rate =  0.00% (0 / 25 vias)
+ 
+    Layer VIA1       =  0.00% (0      / 12      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (12      vias)
+    Layer VIA2       =  0.00% (0      / 13      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (13      vias)
+ 
+  Total double via conversion rate    =  0.00% (0 / 25 vias)
+ 
+    Layer VIA1       =  0.00% (0      / 12      vias)
+    Layer VIA2       =  0.00% (0      / 13      vias)
+ 
+  The optimized via conversion rate based on total routed via count =  0.00% (0 / 25 vias)
+ 
+    Layer VIA1       =  0.00% (0      / 12      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (12      vias)
+    Layer VIA2       =  0.00% (0      / 13      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (13      vias)
+ 
+
+Total number of nets = 8
+0 open nets, of which 0 are frozen
+Total number of excluded ports = 0 ports of 0 unplaced cells connected to 0 nets
+                                 0 ports without pins of 0 cells connected to 0 nets
+                                 0 ports of 0 cover cells connected to 0 non-pg nets
+Total number of DRCs = 0
+Total number of antenna violations = antenna checking not active
+Information: Routes in non-preferred voltage areas = 0 (ZRT-559)
+
+Topology ECO not run, no qualifying violations or in frozen nets.
+Updating the database ...
+Information: Ending 'route_auto' (FLW-8001)
+Information: Time: 2023-04-26 22:23:45 / Session: 1.22 hr / Command: 0.00 hr / Memory: 770 MB (FLW-8100)
+icc2_shell> save_block $library_name:$top_module
+Information: Saving block 'fa_icc2:full_adder.design'
+1
+icc2_shell> save_lib -all
+Saving all libraries...
+1
+icc2_shell> write_gds -hier all ${top_module}.gds
+Warning: The user specified view ' layout' for lib-cell 'XOR2X2_HVT' is not available. (GDS-034)
+Warning: The user specified view ' layout' for lib-cell 'AO22X1_HVT' is not available. (GDS-034)
+Warning: The user specified view ' layout' for lib-cell 'XOR3X2_HVT' is not available. (GDS-034)
+1
+icc2_shell> start_gui
+icc2_shell> 

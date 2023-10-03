@@ -1,0 +1,84 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nets
+        -max_paths 100
+        -transition_time
+        -capacitance
+Design : full_adder
+Version: T-2022.03-SP5-1
+Date   : Wed Apr 26 19:29:20 2023
+****************************************
+
+Operating Conditions: ss0p7v125c   Library: saed32hvt_ss0p7v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: a (input port clocked by vclk)
+  Endpoint: sum (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  full_adder         ForQA                 saed32hvt_ss0p7v125c
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock vclk (rise edge)                                      0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  input external delay                                        0.200      0.200 f
+  a (in)                                            0.000     0.000      0.200 f
+  a (net)                        3        3.784               0.000      0.200 f
+  U6/Y (XOR3X2_HVT)                                 0.157     0.765      0.965 f
+  sum (net)                      1        0.243               0.000      0.965 f
+  sum (out)                                         0.157     0.000      0.965 f
+  data arrival time                                                      0.965
+
+  clock vclk (rise edge)                                      0.700      0.700
+  clock network delay (ideal)                                 0.000      0.700
+  output external delay                                      -0.200      0.500
+  data required time                                                     0.500
+  -------------------------------------------------------------------------------
+  data required time                                                     0.500
+  data arrival time                                                     -0.965
+  -------------------------------------------------------------------------------
+  slack (VIOLATED)                                                      -0.465
+
+
+  Startpoint: a (input port clocked by vclk)
+  Endpoint: co (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  full_adder         ForQA                 saed32hvt_ss0p7v125c
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock vclk (rise edge)                                      0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  input external delay                                        0.200      0.200 f
+  a (in)                                            0.000     0.000      0.200 f
+  a (net)                        3        3.784               0.000      0.200 f
+  U4/Y (XOR2X2_HVT)                                 0.150     0.400      0.600 r
+  n2 (net)                       1        0.725               0.000      0.600 r
+  U5/Y (AO22X1_HVT)                                 0.137     0.323      0.923 r
+  co (net)                       1        0.243               0.000      0.923 r
+  co (out)                                          0.137     0.000      0.923 r
+  data arrival time                                                      0.923
+
+  clock vclk (rise edge)                                      0.700      0.700
+  clock network delay (ideal)                                 0.000      0.700
+  output external delay                                      -0.200      0.500
+  data required time                                                     0.500
+  -------------------------------------------------------------------------------
+  data required time                                                     0.500
+  data arrival time                                                     -0.923
+  -------------------------------------------------------------------------------
+  slack (VIOLATED)                                                      -0.423
+
+
+1

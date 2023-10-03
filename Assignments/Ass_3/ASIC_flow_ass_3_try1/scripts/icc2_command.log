@@ -1,0 +1,85 @@
+#@ # 
+#@ # Running icc2_shell Version U-2022.12 for linux64 -- Dec 11, 2022
+#@ # Date:   Sat Apr 29 13:50:38 2023
+#@ # Run by: aedc4@computerlab-pc4
+#@ 
+
+start_gui
+gui_set_pref_value -category {SelectByNamePalette} -key {ObjectType} -value {Logical Cells}
+#/* Top-level Module                                  */
+set top_module mvm_uart_system
+#/* Library Name                                      */
+set library_name fa_icc2
+set PDKDIR /home/aedc4/libs/tsmc_32nm/SAED32_EDK
+set SAED32_EDK /home/aedc4/libs/tsmc_32nm/SAED32_EDK/lib
+set synopsys /home/aedc4/Apps/syn/T-2022.03-SP5-1
+set search_path [concat $search_path $SAED32_EDK/stdcell_hvt $SAED32_EDK/stdcell_hvt/db_nldm]
+set link_library {* saed32hvt_ss0p7v125c.db}
+set_app_options -list {lib.configuration.default_flow_setup {}};
+set_app_options -list {lib.configuration.output_dir {CLIBs}}
+set_app_options -list {lib.configuration.lef_site_mapping {}}
+set_app_options -list {lib.configuration.process_label_mapping {}}
+set_app_options -list {lib.configuration.display_lm_messages {false}}
+#----------------------------------------------
+#   Create Library
+#----------------------------------------------
+create_lib -ref_libs {/home/aedc4/0_SysV_Mewan/ASIC flow_ass_3/libs/saed32nm_hvt_1p9m.lef} -technology /home/aedc4/0_SysV_Mewan/ASIC flow_ass_3/libs/saed32nm_1p9m_mw.tf $library_name
+read_parasitic_tech -name {parasitics} -tlup {/home/aedc4/0_SysV_Mewan/ASIC flow_ass_3/libs/saed32nm_1p9m_Cmax.tluplus} -layermap {/home/aedc4/0_SysV_Mewan/ASIC flow_ass_3/libs/saed32nm_tf_itf_tluplus.map}
+#/* Top-level Module                                  */
+set top_module mvm_uart_system
+#/* Library Name                                      */
+set library_name fa_icc2
+set PDKDIR /home/aedc4/libs/tsmc_32nm/SAED32_EDK
+set SAED32_EDK /home/aedc4/libs/tsmc_32nm/SAED32_EDK/lib
+set synopsys /home/aedc4/Apps/syn/T-2022.03-SP5-1
+set search_path [concat $search_path $SAED32_EDK/stdcell_hvt $SAED32_EDK/stdcell_hvt/db_nldm]
+set link_library {* saed32hvt_ss0p7v125c.db}
+set_app_options -list {lib.configuration.default_flow_setup {}};
+set_app_options -list {lib.configuration.output_dir {CLIBs}}
+set_app_options -list {lib.configuration.lef_site_mapping {}}
+set_app_options -list {lib.configuration.process_label_mapping {}}
+set_app_options -list {lib.configuration.display_lm_messages {false}}
+#----------------------------------------------
+#   Create Library
+#----------------------------------------------
+create_lib -ref_libs {/home/aedc4/0_SysV_Mewan/ASIC flow_ass_3/libs/saed32nm_hvt_1p9m.lef} -technology /home/aedc4/0_SysV_Mewan/ASIC flow_ass_3/libs/saed32nm_1p9m_mw.tf fa_icc2
+read_parasitic_tech -name {parasitics} -tlup {/home/aedc4/0_SysV_Mewan/ASIC flow_ass_3/libs/saed32nm_1p9m_Cmax.tluplus} -layermap {/home/aedc4/0_SysV_Mewan/ASIC flow_ass_3/libs/saed32nm_tf_itf_tluplus.map}
+#/* Top-level Module                                  */
+set top_module mvm_uart_system
+#/* Library Name                                      */
+set library_name fa_icc2
+set PDKDIR /home/aedc4/libs/tsmc_32nm/SAED32_EDK
+set SAED32_EDK /home/aedc4/libs/tsmc_32nm/SAED32_EDK/lib
+set synopsys /home/aedc4/Apps/syn/T-2022.03-SP5-1
+set search_path [concat $search_path $SAED32_EDK/stdcell_hvt $SAED32_EDK/stdcell_hvt/db_nldm]
+set link_library {* saed32hvt_ss0p7v125c.db}
+set_app_options -list {lib.configuration.default_flow_setup {}};
+set_app_options -list {lib.configuration.output_dir {CLIBs}}
+set_app_options -list {lib.configuration.lef_site_mapping {}}
+set_app_options -list {lib.configuration.process_label_mapping {}}
+set_app_options -list {lib.configuration.display_lm_messages {false}}
+#----------------------------------------------
+#   Create Library
+#----------------------------------------------
+create_lib -ref_libs {/home/aedc4/0_SysV_Mewan/ASIC flow_ass_3/libs/saed32nm_hvt_1p9m.lef} -technology /home/aedc4/0_SysV_Mewan/ASIC flow_ass_3/libs/saed32nm_1p9m_mw.tf
+read_parasitic_tech -name {parasitics} -tlup {/home/aedc4/0_SysV_Mewan/ASIC flow_ass_3/libs/saed32nm_1p9m_Cmax.tluplus} -layermap {/home/aedc4/0_SysV_Mewan/ASIC flow_ass_3/libs/saed32nm_tf_itf_tluplus.map}
+#/* Top-level Module                                  */
+set top_module mvm_uart_system
+#/* Library Name                                      */
+set library_name uart_icc2
+set PDKDIR /home/aedc4/libs/tsmc_32nm/SAED32_EDK
+set SAED32_EDK /home/aedc4/libs/tsmc_32nm/SAED32_EDK/lib
+set synopsys /home/aedc4/Apps/syn/T-2022.03-SP5-1
+set search_path [concat $search_path $SAED32_EDK/stdcell_hvt $SAED32_EDK/stdcell_hvt/db_nldm]
+set link_library {* saed32hvt_ss0p7v125c.db}
+set_app_options -list {lib.configuration.default_flow_setup {}};
+set_app_options -list {lib.configuration.output_dir {CLIBs}}
+set_app_options -list {lib.configuration.lef_site_mapping {}}
+set_app_options -list {lib.configuration.process_label_mapping {}}
+set_app_options -list {lib.configuration.display_lm_messages {false}}
+#----------------------------------------------
+#   Create Library
+#----------------------------------------------
+create_lib -ref_libs {/home/aedc4/0_SysV_Mewan/ASIC flow_ass_3/libs/saed32nm_hvt_1p9m.lef} -technology /home/aedc4/0_SysV_Mewan/ASIC flow_ass_3/libs/saed32nm_1p9m_mw.tf $library_name
+read_parasitic_tech -name {parasitics} -tlup {/home/aedc4/0_SysV_Mewan/ASIC flow_ass_3/libs/saed32nm_1p9m_Cmax.tluplus} -layermap {/home/aedc4/0_SysV_Mewan/ASIC flow_ass_3/libs/saed32nm_tf_itf_tluplus.map}
+exit

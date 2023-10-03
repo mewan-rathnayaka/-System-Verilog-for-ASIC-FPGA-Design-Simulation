@@ -1,0 +1,1959 @@
+ 
+****************************************
+Report : cell
+Design : mvm_uart_system
+Version: T-2022.03-SP5-1
+Date   : Sat Apr 29 15:42:33 2023
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+   mo - map_only
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+AXIS_MVM_MATVEC_U2        AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_MATVEC_U3        AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_MATVEC_U4        AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_MATVEC_U5        AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_MATVEC_U6        AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_MATVEC_U7        AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_MATVEC_U8        AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_MATVEC_U9        AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_MATVEC_U10       AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_MATVEC_U11       AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_MATVEC_U12       AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_MATVEC_U13       AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_MATVEC_U14       AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_MATVEC_U15       AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_MATVEC_U16       AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_MATVEC_U17       AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_MATVEC_U18       AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_MATVEC_U19       AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_MATVEC_U20       AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_MATVEC_U21       AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_MATVEC_U22       AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_MATVEC_U23       AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_MATVEC_U24       AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_MATVEC_U25       AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_MATVEC_U26       AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_MATVEC_U27       AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_MATVEC_U28       AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_MATVEC_U29       AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_MATVEC_U30       AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_MATVEC_U31       AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_MATVEC_U33       NAND2X0_HVT     saed32hvt_ss0p7v125c
+                                                          1.524864  
+AXIS_MVM_MATVEC_U34       NAND3X0_HVT     saed32hvt_ss0p7v125c
+                                                          1.779008  
+AXIS_MVM_MATVEC_U35       OAI221X1_HVT    saed32hvt_ss0p7v125c
+                                                          3.558016  
+AXIS_MVM_MATVEC_U36       INVX0_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+AXIS_MVM_MATVEC_U37       NAND2X0_HVT     saed32hvt_ss0p7v125c
+                                                          1.524864  
+AXIS_MVM_MATVEC_U38       NAND3X0_HVT     saed32hvt_ss0p7v125c
+                                                          1.779008  
+AXIS_MVM_MATVEC_U39       NAND3X0_HVT     saed32hvt_ss0p7v125c
+                                                          1.779008  
+AXIS_MVM_MATVEC_U40       NAND2X0_HVT     saed32hvt_ss0p7v125c
+                                                          1.524864  
+AXIS_MVM_MATVEC_U43       AND2X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.033152  
+AXIS_MVM_MATVEC_U44       NAND2X0_HVT     saed32hvt_ss0p7v125c
+                                                          1.524864  
+AXIS_MVM_MATVEC_U45       NAND3X0_HVT     saed32hvt_ss0p7v125c
+                                                          1.779008  
+AXIS_MVM_MATVEC_U46       NAND2X0_HVT     saed32hvt_ss0p7v125c
+                                                          1.524864  
+AXIS_MVM_MATVEC_U47       NAND3X0_HVT     saed32hvt_ss0p7v125c
+                                                          1.779008  
+AXIS_MVM_MATVEC_U48       INVX0_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+AXIS_MVM_MATVEC_U49       OAI221X1_HVT    saed32hvt_ss0p7v125c
+                                                          3.558016  
+AXIS_MVM_MATVEC_U50       INVX0_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+AXIS_MVM_MATVEC_U51       NAND2X0_HVT     saed32hvt_ss0p7v125c
+                                                          1.524864  
+AXIS_MVM_MATVEC_U52       NAND3X0_HVT     saed32hvt_ss0p7v125c
+                                                          1.779008  
+AXIS_MVM_MATVEC_U53       NAND3X0_HVT     saed32hvt_ss0p7v125c
+                                                          1.779008  
+AXIS_MVM_MATVEC_U54       OR2X1_HVT       saed32hvt_ss0p7v125c
+                                                          2.033152  
+AXIS_MVM_MATVEC_U56       NAND2X0_HVT     saed32hvt_ss0p7v125c
+                                                          1.524864  
+AXIS_MVM_MATVEC_U59       AND2X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.033152  
+AXIS_MVM_MATVEC_U60       NAND2X0_HVT     saed32hvt_ss0p7v125c
+                                                          1.524864  
+AXIS_MVM_MATVEC_U61       NAND3X0_HVT     saed32hvt_ss0p7v125c
+                                                          1.779008  
+AXIS_MVM_MATVEC_U62       INVX0_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+AXIS_MVM_MATVEC_U63       OAI221X1_HVT    saed32hvt_ss0p7v125c
+                                                          3.558016  
+AXIS_MVM_MATVEC_U64       INVX0_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+AXIS_MVM_MATVEC_U65       NAND2X0_HVT     saed32hvt_ss0p7v125c
+                                                          1.524864  
+AXIS_MVM_MATVEC_U66       NAND3X0_HVT     saed32hvt_ss0p7v125c
+                                                          1.779008  
+AXIS_MVM_MATVEC_U67       NAND3X0_HVT     saed32hvt_ss0p7v125c
+                                                          1.779008  
+AXIS_MVM_MATVEC_U68       NAND2X0_HVT     saed32hvt_ss0p7v125c
+                                                          1.524864  
+AXIS_MVM_MATVEC_U71       AND2X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.033152  
+AXIS_MVM_MATVEC_U72       OAI221X1_HVT    saed32hvt_ss0p7v125c
+                                                          3.558016  
+AXIS_MVM_MATVEC_U73       INVX0_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+AXIS_MVM_MATVEC_U74       NAND2X0_HVT     saed32hvt_ss0p7v125c
+                                                          1.524864  
+AXIS_MVM_MATVEC_U75       NAND3X0_HVT     saed32hvt_ss0p7v125c
+                                                          1.779008  
+AXIS_MVM_MATVEC_U76       NAND3X0_HVT     saed32hvt_ss0p7v125c
+                                                          1.779008  
+AXIS_MVM_MATVEC_U77       OR2X1_HVT       saed32hvt_ss0p7v125c
+                                                          2.033152  
+AXIS_MVM_MATVEC_U79       NAND2X0_HVT     saed32hvt_ss0p7v125c
+                                                          1.524864  
+AXIS_MVM_MATVEC_U82       AND2X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.033152  
+AXIS_MVM_MATVEC_add_31_S2_G2_U1_1
+                          FADDX1_HVT      saed32hvt_ss0p7v125c
+                                                          4.828736  mo, r
+AXIS_MVM_MATVEC_add_31_S2_G2_U1_2
+                          FADDX1_HVT      saed32hvt_ss0p7v125c
+                                                          4.828736  mo, r
+AXIS_MVM_MATVEC_add_31_S2_G2_U1_3
+                          FADDX1_HVT      saed32hvt_ss0p7v125c
+                                                          4.828736  mo, r
+AXIS_MVM_MATVEC_add_31_S2_G2_U1_4
+                          FADDX1_HVT      saed32hvt_ss0p7v125c
+                                                          4.828736  mo, r
+AXIS_MVM_MATVEC_add_31_S2_U1_1
+                          FADDX1_HVT      saed32hvt_ss0p7v125c
+                                                          4.828736  mo, r
+AXIS_MVM_MATVEC_add_31_S2_U1_2
+                          FADDX1_HVT      saed32hvt_ss0p7v125c
+                                                          4.828736  mo, r
+AXIS_MVM_MATVEC_add_31_S2_U1_3
+                          FADDX1_HVT      saed32hvt_ss0p7v125c
+                                                          4.828736  mo, r
+AXIS_MVM_MATVEC_add_31_S2_U1_4
+                          FADDX1_HVT      saed32hvt_ss0p7v125c
+                                                          4.828736  mo, r
+AXIS_MVM_MATVEC_tree_reg_0__0__0__0_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_MATVEC_tree_reg_0__0__0__1_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_MATVEC_tree_reg_0__0__0__2_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_MATVEC_tree_reg_0__0__0__3_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_MATVEC_tree_reg_0__0__0__4_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_MATVEC_tree_reg_0__0__1__0_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_MATVEC_tree_reg_0__0__1__1_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_MATVEC_tree_reg_0__0__1__2_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_MATVEC_tree_reg_0__0__1__3_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_MATVEC_tree_reg_0__0__1__4_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_MATVEC_tree_reg_0__1__0__0_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_MATVEC_tree_reg_0__1__0__1_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_MATVEC_tree_reg_0__1__0__2_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_MATVEC_tree_reg_0__1__0__3_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_MATVEC_tree_reg_0__1__0__4_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_MATVEC_tree_reg_1__0__0__0_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_MATVEC_tree_reg_1__0__0__1_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_MATVEC_tree_reg_1__0__0__2_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_MATVEC_tree_reg_1__0__0__3_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_MATVEC_tree_reg_1__0__0__4_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_MATVEC_tree_reg_1__0__1__0_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_MATVEC_tree_reg_1__0__1__1_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_MATVEC_tree_reg_1__0__1__2_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_MATVEC_tree_reg_1__0__1__3_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_MATVEC_tree_reg_1__0__1__4_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_MATVEC_tree_reg_1__1__0__0_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_MATVEC_tree_reg_1__1__0__1_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_MATVEC_tree_reg_1__1__0__2_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_MATVEC_tree_reg_1__1__0__3_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_MATVEC_tree_reg_1__1__0__4_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_U3          AO222X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.303872  
+AXIS_MVM_SKID_U4          AO222X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.303872  
+AXIS_MVM_SKID_U5          AO222X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.303872  
+AXIS_MVM_SKID_U6          AO222X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.303872  
+AXIS_MVM_SKID_U7          AO222X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.303872  
+AXIS_MVM_SKID_U8          AO222X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.303872  
+AXIS_MVM_SKID_U9          AO222X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.303872  
+AXIS_MVM_SKID_U10         AO222X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.303872  
+AXIS_MVM_SKID_U11         AO222X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.303872  
+AXIS_MVM_SKID_U12         AO222X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.303872  
+AXIS_MVM_SKID_U13         AND2X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.033152  
+AXIS_MVM_SKID_U16         NAND2X0_HVT     saed32hvt_ss0p7v125c
+                                                          1.524864  
+AXIS_MVM_SKID_U17         AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_SKID_U18         AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_SKID_U19         AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_SKID_U20         AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_SKID_U21         AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_SKID_U22         AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_SKID_U23         AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_SKID_U24         AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_SKID_U25         AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_SKID_U26         AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_SKID_U27         AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_SKID_U28         AND2X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.033152  
+AXIS_MVM_SKID_U29         AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_SKID_U30         INVX0_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+AXIS_MVM_SKID_U31         NAND2X0_HVT     saed32hvt_ss0p7v125c
+                                                          1.524864  
+AXIS_MVM_SKID_U32         OA21X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_SKID_U35         AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_SKID_U36         AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_SKID_U37         AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_SKID_U38         AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_SKID_U39         AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_SKID_U40         AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_SKID_U41         AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_SKID_U42         AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_SKID_U43         AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_SKID_U44         AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_SKID_U45         AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_SKID_U46         AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_SKID_U47         AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_SKID_U48         AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_SKID_U49         AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_SKID_U50         AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_SKID_U51         AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_SKID_U52         AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_SKID_U53         AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_SKID_U54         AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_SKID_U55         AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_SKID_U56         AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_SKID_U57         AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_SKID_U58         AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_SKID_U59         AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_SKID_U60         AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_SKID_U61         AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_SKID_U62         AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_SKID_U63         AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_SKID_U64         AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_SKID_U67         AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_SKID_U70         AO21X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_SKID_U74         AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_SKID_U78         NAND2X0_HVT     saed32hvt_ss0p7v125c
+                                                          1.524864  
+AXIS_MVM_SKID_U81         NAND4X0_HVT     saed32hvt_ss0p7v125c
+                                                          2.033152  
+AXIS_MVM_SKID_U82         NAND4X0_HVT     saed32hvt_ss0p7v125c
+                                                          2.033152  
+AXIS_MVM_SKID_U83         NAND4X0_HVT     saed32hvt_ss0p7v125c
+                                                          2.033152  
+AXIS_MVM_SKID_U84         NAND4X0_HVT     saed32hvt_ss0p7v125c
+                                                          2.033152  
+AXIS_MVM_SKID_U86         AND4X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_SKID_U87         AND4X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_SKID_U88         AND4X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_SKID_U89         NAND4X0_HVT     saed32hvt_ss0p7v125c
+                                                          2.033152  
+AXIS_MVM_SKID_U90         NAND4X0_HVT     saed32hvt_ss0p7v125c
+                                                          2.033152  
+AXIS_MVM_SKID_U91         NAND4X0_HVT     saed32hvt_ss0p7v125c
+                                                          2.033152  
+AXIS_MVM_SKID_b_data_reg_0_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_b_data_reg_1_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_b_data_reg_2_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_b_data_reg_3_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_b_data_reg_4_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_b_data_reg_5_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_b_data_reg_6_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_b_data_reg_7_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_b_data_reg_8_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_b_data_reg_9_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_b_valid_reg DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_m_data_reg_0_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_m_data_reg_1_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_m_data_reg_2_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_m_data_reg_3_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_m_data_reg_4_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_m_data_reg_5_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_m_data_reg_6_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_m_data_reg_7_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_m_data_reg_8_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_m_data_reg_9_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_m_valid_reg DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_s_ready_reg DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_state_reg_0_
+                          DFFSSRX1_HVT    saed32hvt_ss0p7v125c
+                                                          7.370176  n
+AXIS_MVM_SKID_state_reg_1_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_state_reg_2_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_state_reg_3_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_state_reg_4_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_state_reg_5_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_state_reg_6_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_state_reg_7_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_state_reg_8_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_state_reg_9_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_state_reg_10_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_state_reg_11_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_state_reg_12_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_state_reg_13_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_state_reg_14_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_state_reg_15_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_state_reg_16_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_state_reg_17_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_state_reg_18_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_state_reg_19_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_state_reg_20_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_state_reg_21_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_state_reg_22_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_state_reg_23_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_state_reg_24_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_state_reg_25_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_state_reg_26_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_state_reg_27_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_state_reg_28_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_state_reg_29_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_state_reg_30_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_SKID_state_reg_31_
+                          DFFX1_HVT       saed32hvt_ss0p7v125c
+                                                          6.607744  n
+AXIS_MVM_U2               AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_U3               AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+AXIS_MVM_U4               INVX0_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+AXIS_MVM_i_valid_reg      DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+AXIS_MVM_shift_reg_0_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+U1                        AND4X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+U2                        AND4X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+U3                        INVX2_HVT       saed32hvt_ss0p7v125c
+                                                          1.524864  
+U4                        NAND2X0_HVT     saed32hvt_ss0p7v125c
+                                                          1.524864  
+U5                        AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+U6                        NOR2X2_HVT      saed32hvt_ss0p7v125c
+                                                          2.795584  
+U7                        INVX32_HVT      saed32hvt_ss0p7v125c
+                                                          9.149184  
+U8                        AND2X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.033152  
+U9                        INVX0_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+U10                       NAND4X0_HVT     saed32hvt_ss0p7v125c
+                                                          2.033152  
+U11                       NAND4X0_HVT     saed32hvt_ss0p7v125c
+                                                          2.033152  
+U12                       OR4X1_HVT       saed32hvt_ss0p7v125c
+                                                          3.558016  
+U13                       AND4X2_HVT      saed32hvt_ss0p7v125c
+                                                          3.812160  
+U14                       INVX1_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+U15                       INVX1_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+U16                       IBUFFX2_HVT     saed32hvt_ss0p7v125c
+                                                          2.541440  
+U17                       XOR2X2_HVT      saed32hvt_ss0p7v125c
+                                                          4.574592  
+U18                       NBUFFX2_HVT     saed32hvt_ss0p7v125c
+                                                          2.033152  
+U19                       NBUFFX2_HVT     saed32hvt_ss0p7v125c
+                                                          2.033152  
+U20                       AND2X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.033152  
+U21                       AND2X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.033152  
+U22                       INVX2_HVT       saed32hvt_ss0p7v125c
+                                                          1.524864  
+U23                       INVX2_HVT       saed32hvt_ss0p7v125c
+                                                          1.524864  
+U24                       NOR3X0_HVT      saed32hvt_ss0p7v125c
+                                                          2.795584  
+U25                       NOR2X2_HVT      saed32hvt_ss0p7v125c
+                                                          2.795584  
+U26                       NOR2X2_HVT      saed32hvt_ss0p7v125c
+                                                          2.795584  
+U27                       AND2X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.033152  
+U28                       XOR2X2_HVT      saed32hvt_ss0p7v125c
+                                                          4.574592  
+U29                       NOR2X2_HVT      saed32hvt_ss0p7v125c
+                                                          2.795584  
+U30                       AND4X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+U31                       XOR2X2_HVT      saed32hvt_ss0p7v125c
+                                                          4.574592  
+U32                       OR3X1_HVT       saed32hvt_ss0p7v125c
+                                                          2.287296  
+U33                       INVX0_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+U34                       NOR2X4_HVT      saed32hvt_ss0p7v125c
+                                                          3.303872  
+U35                       AO21X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+U36                       INVX1_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+U37                       NOR4X1_HVT      saed32hvt_ss0p7v125c
+                                                          3.049728  
+U38                       NAND4X0_HVT     saed32hvt_ss0p7v125c
+                                                          2.033152  
+U39                       OR4X4_HVT       saed32hvt_ss0p7v125c
+                                                          4.320448  
+U40                       AND2X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.033152  
+U41                       IBUFFX2_HVT     saed32hvt_ss0p7v125c
+                                                          2.541440  
+U42                       INVX4_HVT       saed32hvt_ss0p7v125c
+                                                          2.033152  
+U43                       OR3X1_HVT       saed32hvt_ss0p7v125c
+                                                          2.287296  
+U44                       OR4X1_HVT       saed32hvt_ss0p7v125c
+                                                          3.558016  
+U45                       NAND4X0_HVT     saed32hvt_ss0p7v125c
+                                                          2.033152  
+U46                       INVX1_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+U47                       INVX2_HVT       saed32hvt_ss0p7v125c
+                                                          1.524864  
+U48                       NOR4X1_HVT      saed32hvt_ss0p7v125c
+                                                          3.049728  
+U49                       NAND2X0_HVT     saed32hvt_ss0p7v125c
+                                                          1.524864  
+U50                       IBUFFX2_HVT     saed32hvt_ss0p7v125c
+                                                          2.541440  
+U51                       AOI21X2_HVT     saed32hvt_ss0p7v125c
+                                                          3.303872  
+U52                       INVX4_HVT       saed32hvt_ss0p7v125c
+                                                          2.033152  
+U53                       INVX1_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+U54                       INVX1_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+U55                       NOR4X1_HVT      saed32hvt_ss0p7v125c
+                                                          3.049728  
+U56                       INVX0_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+U57                       INVX2_HVT       saed32hvt_ss0p7v125c
+                                                          1.524864  
+U58                       INVX1_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+U59                       NAND3X2_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+U60                       NAND2X0_HVT     saed32hvt_ss0p7v125c
+                                                          1.524864  
+U61                       INVX1_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+U62                       INVX1_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+U63                       NAND2X0_HVT     saed32hvt_ss0p7v125c
+                                                          1.524864  
+U64                       NAND3X0_HVT     saed32hvt_ss0p7v125c
+                                                          1.779008  
+U65                       INVX1_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+U66                       NAND3X0_HVT     saed32hvt_ss0p7v125c
+                                                          1.779008  
+U67                       NAND2X0_HVT     saed32hvt_ss0p7v125c
+                                                          1.524864  
+U68                       INVX0_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+U69                       NOR4X1_HVT      saed32hvt_ss0p7v125c
+                                                          3.049728  
+U70                       INVX0_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+U71                       AND4X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+U72                       NBUFFX4_HVT     saed32hvt_ss0p7v125c
+                                                          2.541440  
+U73                       NAND2X0_HVT     saed32hvt_ss0p7v125c
+                                                          1.524864  
+U74                       NAND2X0_HVT     saed32hvt_ss0p7v125c
+                                                          1.524864  
+U75                       INVX0_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+U76                       NOR4X1_HVT      saed32hvt_ss0p7v125c
+                                                          3.049728  
+U77                       AND3X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.287296  
+U78                       OAI22X2_HVT     saed32hvt_ss0p7v125c
+                                                          3.303872  
+U79                       NAND4X0_HVT     saed32hvt_ss0p7v125c
+                                                          2.033152  
+U80                       IBUFFX2_HVT     saed32hvt_ss0p7v125c
+                                                          2.541440  
+U81                       XOR2X2_HVT      saed32hvt_ss0p7v125c
+                                                          4.574592  
+U82                       AND3X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.287296  
+U83                       AND4X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+U84                       AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+U85                       AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+U86                       AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+U87                       OAI22X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+U88                       INVX1_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+U89                       INVX2_HVT       saed32hvt_ss0p7v125c
+                                                          1.524864  
+U90                       INVX1_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+U91                       INVX1_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+U92                       INVX2_HVT       saed32hvt_ss0p7v125c
+                                                          1.524864  
+U93                       INVX1_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+U94                       INVX2_HVT       saed32hvt_ss0p7v125c
+                                                          1.524864  
+U95                       INVX1_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+U96                       INVX1_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+U97                       INVX2_HVT       saed32hvt_ss0p7v125c
+                                                          1.524864  
+U98                       INVX1_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+U99                       INVX1_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+U100                      INVX2_HVT       saed32hvt_ss0p7v125c
+                                                          1.524864  
+U101                      INVX2_HVT       saed32hvt_ss0p7v125c
+                                                          1.524864  
+U102                      INVX2_HVT       saed32hvt_ss0p7v125c
+                                                          1.524864  
+U103                      INVX8_HVT       saed32hvt_ss0p7v125c
+                                                          3.049728  
+U105                      AND2X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.033152  
+U106                      NOR4X1_HVT      saed32hvt_ss0p7v125c
+                                                          3.049728  
+U107                      INVX1_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+U108                      AND4X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+U109                      NAND4X0_HVT     saed32hvt_ss0p7v125c
+                                                          2.033152  
+U110                      NOR4X1_HVT      saed32hvt_ss0p7v125c
+                                                          3.049728  
+U111                      NAND4X0_HVT     saed32hvt_ss0p7v125c
+                                                          2.033152  
+U112                      OA21X2_HVT      saed32hvt_ss0p7v125c
+                                                          2.795584  
+U113                      IBUFFX2_HVT     saed32hvt_ss0p7v125c
+                                                          2.541440  
+U114                      NAND4X0_HVT     saed32hvt_ss0p7v125c
+                                                          2.033152  
+U115                      OAI22X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+U116                      IBUFFX2_HVT     saed32hvt_ss0p7v125c
+                                                          2.541440  
+U117                      INVX1_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+U118                      NAND4X0_HVT     saed32hvt_ss0p7v125c
+                                                          2.033152  
+U119                      NAND4X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+U120                      INVX4_HVT       saed32hvt_ss0p7v125c
+                                                          2.033152  
+U121                      INVX1_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+U122                      NAND4X0_HVT     saed32hvt_ss0p7v125c
+                                                          2.033152  
+U123                      INVX0_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+U124                      NOR4X1_HVT      saed32hvt_ss0p7v125c
+                                                          3.049728  
+U125                      NOR4X1_HVT      saed32hvt_ss0p7v125c
+                                                          3.049728  
+U126                      NAND3X2_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+U127                      INVX8_HVT       saed32hvt_ss0p7v125c
+                                                          3.049728  
+U128                      INVX1_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+U129                      NOR4X1_HVT      saed32hvt_ss0p7v125c
+                                                          3.049728  
+U130                      INVX0_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+U131                      NOR4X1_HVT      saed32hvt_ss0p7v125c
+                                                          3.049728  
+U132                      INVX0_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+U133                      AND2X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.033152  
+U134                      INVX1_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+U135                      INVX1_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+U136                      AO21X2_HVT      saed32hvt_ss0p7v125c
+                                                          2.795584  
+U137                      AO21X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+U138                      XOR2X2_HVT      saed32hvt_ss0p7v125c
+                                                          4.574592  
+U139                      XOR2X2_HVT      saed32hvt_ss0p7v125c
+                                                          4.574592  
+U140                      INVX8_HVT       saed32hvt_ss0p7v125c
+                                                          3.049728  
+U141                      NAND2X4_HVT     saed32hvt_ss0p7v125c
+                                                          3.303872  
+U142                      INVX2_HVT       saed32hvt_ss0p7v125c
+                                                          1.524864  
+U143                      INVX8_HVT       saed32hvt_ss0p7v125c
+                                                          3.049728  
+U144                      AND2X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.033152  
+U145                      INVX4_HVT       saed32hvt_ss0p7v125c
+                                                          2.033152  
+U146                      INVX16_HVT      saed32hvt_ss0p7v125c
+                                                          5.082880  
+U147                      INVX2_HVT       saed32hvt_ss0p7v125c
+                                                          1.524864  
+U148                      INVX8_HVT       saed32hvt_ss0p7v125c
+                                                          3.049728  
+U149                      AND2X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.033152  
+U150                      NOR4X1_HVT      saed32hvt_ss0p7v125c
+                                                          3.049728  
+U151                      INVX32_HVT      saed32hvt_ss0p7v125c
+                                                          9.149184  
+U152                      INVX32_HVT      saed32hvt_ss0p7v125c
+                                                          9.149184  
+U153                      INVX32_HVT      saed32hvt_ss0p7v125c
+                                                          9.149184  
+U154                      INVX32_HVT      saed32hvt_ss0p7v125c
+                                                          9.149184  
+U155                      INVX32_HVT      saed32hvt_ss0p7v125c
+                                                          9.149184  
+U156                      INVX32_HVT      saed32hvt_ss0p7v125c
+                                                          9.149184  
+U157                      INVX32_HVT      saed32hvt_ss0p7v125c
+                                                          9.149184  
+U158                      INVX32_HVT      saed32hvt_ss0p7v125c
+                                                          9.149184  
+U159                      INVX32_HVT      saed32hvt_ss0p7v125c
+                                                          9.149184  
+U160                      INVX32_HVT      saed32hvt_ss0p7v125c
+                                                          9.149184  
+U161                      INVX32_HVT      saed32hvt_ss0p7v125c
+                                                          9.149184  
+U162                      INVX32_HVT      saed32hvt_ss0p7v125c
+                                                          9.149184  
+U163                      INVX32_HVT      saed32hvt_ss0p7v125c
+                                                          9.149184  
+U164                      INVX32_HVT      saed32hvt_ss0p7v125c
+                                                          9.149184  
+U165                      INVX32_HVT      saed32hvt_ss0p7v125c
+                                                          9.149184  
+U166                      INVX32_HVT      saed32hvt_ss0p7v125c
+                                                          9.149184  
+U167                      INVX32_HVT      saed32hvt_ss0p7v125c
+                                                          9.149184  
+U168                      INVX32_HVT      saed32hvt_ss0p7v125c
+                                                          9.149184  
+U169                      INVX32_HVT      saed32hvt_ss0p7v125c
+                                                          9.149184  
+U170                      INVX32_HVT      saed32hvt_ss0p7v125c
+                                                          9.149184  
+U171                      INVX32_HVT      saed32hvt_ss0p7v125c
+                                                          9.149184  
+U172                      INVX32_HVT      saed32hvt_ss0p7v125c
+                                                          9.149184  
+U173                      INVX32_HVT      saed32hvt_ss0p7v125c
+                                                          9.149184  
+U174                      INVX32_HVT      saed32hvt_ss0p7v125c
+                                                          9.149184  
+U175                      INVX32_HVT      saed32hvt_ss0p7v125c
+                                                          9.149184  
+U176                      INVX32_HVT      saed32hvt_ss0p7v125c
+                                                          9.149184  
+U177                      AND2X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.033152  
+U178                      INVX2_HVT       saed32hvt_ss0p7v125c
+                                                          1.524864  
+U179                      XNOR2X2_HVT     saed32hvt_ss0p7v125c
+                                                          4.574592  
+U180                      AND2X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.033152  
+U181                      INVX2_HVT       saed32hvt_ss0p7v125c
+                                                          1.524864  
+U182                      XNOR2X2_HVT     saed32hvt_ss0p7v125c
+                                                          4.574592  
+U183                      INVX0_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+U184                      INVX0_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+U185                      XOR2X1_HVT      saed32hvt_ss0p7v125c
+                                                          4.320448  
+UART_RX_U3                AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_RX_U8                AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_RX_U9                AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_RX_U11               AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_RX_U13               AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_RX_U15               AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_RX_U17               AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_RX_U19               AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_RX_U21               AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_RX_U23               AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_RX_U25               AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_RX_U27               AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_RX_U29               AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_RX_U32               AND4X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_RX_U34               NAND2X0_HVT     saed32hvt_ss0p7v125c
+                                                          1.524864  
+UART_RX_U35               XOR2X1_HVT      saed32hvt_ss0p7v125c
+                                                          4.320448  
+UART_RX_U37               AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_RX_U38               AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_RX_U39               AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_RX_U40               AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_RX_U42               AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_RX_U44               AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_RX_U45               AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_RX_U46               AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_RX_U47               AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_RX_U48               AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_RX_U50               AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_RX_U51               AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_RX_U52               AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_RX_U54               AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_RX_U55               INVX0_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+UART_RX_U57               OAI222X1_HVT    saed32hvt_ss0p7v125c
+                                                          3.812160  
+UART_RX_U58               NAND2X0_HVT     saed32hvt_ss0p7v125c
+                                                          1.524864  
+UART_RX_U59               NAND2X0_HVT     saed32hvt_ss0p7v125c
+                                                          1.524864  
+UART_RX_U60               AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_RX_U61               AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_RX_U62               AND2X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.033152  
+UART_RX_U63               AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_RX_U64               OR3X1_HVT       saed32hvt_ss0p7v125c
+                                                          2.287296  
+UART_RX_U65               NAND4X0_HVT     saed32hvt_ss0p7v125c
+                                                          2.033152  
+UART_RX_U66               AND3X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.287296  
+UART_RX_U67               NAND3X0_HVT     saed32hvt_ss0p7v125c
+                                                          1.779008  
+UART_RX_U71               NAND3X0_HVT     saed32hvt_ss0p7v125c
+                                                          1.779008  
+UART_RX_U72               INVX0_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+UART_RX_U74               INVX0_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+UART_RX_U75               INVX0_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+UART_RX_U76               INVX0_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+UART_RX_U77               OA21X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_RX_U78               AO21X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_RX_U79               INVX0_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+UART_RX_U80               NAND2X0_HVT     saed32hvt_ss0p7v125c
+                                                          1.524864  
+UART_RX_U84               OR2X1_HVT       saed32hvt_ss0p7v125c
+                                                          2.033152  
+UART_RX_U87               AND4X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_RX_U89               OR3X1_HVT       saed32hvt_ss0p7v125c
+                                                          2.287296  
+UART_RX_U92               OR4X1_HVT       saed32hvt_ss0p7v125c
+                                                          3.558016  
+UART_RX_U95               NOR4X0_HVT      saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_RX_U96               NOR4X0_HVT      saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_RX_U98               OR3X1_HVT       saed32hvt_ss0p7v125c
+                                                          2.287296  
+UART_RX_U99               NAND4X0_HVT     saed32hvt_ss0p7v125c
+                                                          2.033152  
+UART_RX_U100              AND3X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.287296  
+UART_RX_U105              AND4X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_RX_U107              NAND3X0_HVT     saed32hvt_ss0p7v125c
+                                                          1.779008  
+UART_RX_U108              NAND3X0_HVT     saed32hvt_ss0p7v125c
+                                                          1.779008  
+UART_RX_U109              NAND3X0_HVT     saed32hvt_ss0p7v125c
+                                                          1.779008  
+UART_RX_c_bits_reg_0_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_c_bits_reg_1_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_c_bits_reg_2_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_c_clocks_reg_0_   DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_c_clocks_reg_1_   DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_c_clocks_reg_2_   DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_c_clocks_reg_3_   DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_c_clocks_reg_4_   DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_c_clocks_reg_5_   DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_c_clocks_reg_6_   DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_c_clocks_reg_7_   DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_c_clocks_reg_8_   DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_c_clocks_reg_9_   DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_c_clocks_reg_10_  DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_c_clocks_reg_11_  DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_c_clocks_reg_12_  DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_c_clocks_reg_13_  DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_c_clocks_reg_14_  DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_c_words_reg_0_    DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_c_words_reg__1_   DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_m_data_reg_0_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_m_data_reg_1_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_m_data_reg_2_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_m_data_reg_3_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_m_data_reg_4_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_m_data_reg_5_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_m_data_reg_6_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_m_data_reg_7_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_m_data_reg_8_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_m_data_reg_9_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_m_data_reg_10_    DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_m_data_reg_11_    DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_m_valid_reg       DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_r385_U1_1_1       HADDX1_HVT      saed32hvt_ss0p7v125c
+                                                          3.303872  mo, r
+UART_RX_r385_U1_1_2       HADDX1_HVT      saed32hvt_ss0p7v125c
+                                                          3.303872  mo, r
+UART_RX_r385_U1_1_3       HADDX1_HVT      saed32hvt_ss0p7v125c
+                                                          3.303872  mo, r
+UART_RX_r385_U1_1_4       HADDX1_HVT      saed32hvt_ss0p7v125c
+                                                          3.303872  mo, r
+UART_RX_r385_U1_1_5       HADDX2_HVT      saed32hvt_ss0p7v125c
+                                                          3.812160  mo, r
+UART_RX_r385_U1_1_6       HADDX1_HVT      saed32hvt_ss0p7v125c
+                                                          3.303872  mo, r
+UART_RX_r385_U1_1_7       HADDX1_HVT      saed32hvt_ss0p7v125c
+                                                          3.303872  mo, r
+UART_RX_r385_U1_1_8       HADDX1_HVT      saed32hvt_ss0p7v125c
+                                                          3.303872  mo, r
+UART_RX_r385_U1_1_9       HADDX1_HVT      saed32hvt_ss0p7v125c
+                                                          3.303872  mo, r
+UART_RX_r385_U1_1_10      HADDX1_HVT      saed32hvt_ss0p7v125c
+                                                          3.303872  mo, r
+UART_RX_r385_U1_1_11      HADDX1_HVT      saed32hvt_ss0p7v125c
+                                                          3.303872  mo, r
+UART_RX_r385_U1_1_12      HADDX1_HVT      saed32hvt_ss0p7v125c
+                                                          3.303872  mo, r
+UART_RX_r385_U1_1_13      HADDX1_HVT      saed32hvt_ss0p7v125c
+                                                          3.303872  mo, r
+UART_RX_state_reg_0_      DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_state_reg_1_      DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_state_reg_2_      DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_state_reg_3_      DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_state_reg_4_      DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_state_reg_5_      DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_state_reg_6_      DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_state_reg_7_      DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_state_reg_8_      DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_state_reg_9_      DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_state_reg_10_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_state_reg_11_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_state_reg_12_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_state_reg_13_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_state_reg_14_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_state_reg_15_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_state_reg_16_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_state_reg_17_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_state_reg_18_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_state_reg_19_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_state_reg_20_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_state_reg_21_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_state_reg_22_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_state_reg_23_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_state_reg_24_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_state_reg_25_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_state_reg_26_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_state_reg_27_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_state_reg_28_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_state_reg_29_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_state_reg_30_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_RX_state_reg_31_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_U3                AO21X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U4                AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U6                AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U8                AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U10               AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U11               AO21X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U13               AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U14               AO21X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U16               AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U17               AO21X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U19               AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U20               AO21X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U22               AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U25               AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U28               AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U31               AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U34               AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U36               AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U38               AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U40               AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U42               AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U44               AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U47               AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U48               AO21X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U50               AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U51               AO21X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U53               AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U54               AO21X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U56               AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U57               AO21X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U59               AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U60               AO21X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U62               AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U65               AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U66               AO21X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U68               AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U70               AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U72               AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U74               AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U76               AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U78               AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U79               AO21X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U81               AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U84               AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U87               AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U88               AO21X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U90               AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U93               AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U96               AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U97               AO21X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U99               AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U102              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U104              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U106              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U108              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U110              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U112              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U115              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U118              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U119              AO21X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U121              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U124              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U125              AO21X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U127              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U128              AO21X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U130              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U131              AO21X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U133              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U134              AO21X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U136              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U138              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U140              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U142              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U144              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U146              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U147              AO21X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U149              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U152              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U155              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U156              AO21X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U158              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U161              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U162              AO21X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U164              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U165              AO21X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U167              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U168              AO21X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U170              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U172              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U174              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U176              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U178              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U180              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U181              AO21X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U183              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U186              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U187              AO21X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U189              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U192              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U195              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U198              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U199              AO21X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U201              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U202              AO21X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U204              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U206              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U208              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U210              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U212              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U214              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U217              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U218              AO21X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U220              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U223              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U226              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U229              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U232              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U233              AO21X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U235              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U236              AO21X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U238              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U240              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U242              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U244              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U246              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U249              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U250              AO21X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U252              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U253              AO21X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U255              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U257              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U258              AO21X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U260              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U261              AO21X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U263              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U264              AO21X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U266              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U267              AO21X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U269              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U271              AO221X1_HVT     saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_U280              AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U281              AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U282              AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U284              AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U286              AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U287              AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U288              AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U289              AND2X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.033152  
+UART_TX_U290              AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U292              AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U293              AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U295              AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U297              AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U298              INVX0_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+UART_TX_U299              AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U300              AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U302              AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U303              AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U304              AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U305              INVX0_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+UART_TX_U306              AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U307              INVX0_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+UART_TX_U308              AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U309              INVX0_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+UART_TX_U310              AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U313              AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U315              NAND4X0_HVT     saed32hvt_ss0p7v125c
+                                                          2.033152  
+UART_TX_U316              AND4X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U324              AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U325              AO22X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.541440  
+UART_TX_U326              AND2X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.033152  
+UART_TX_U327              OR3X1_HVT       saed32hvt_ss0p7v125c
+                                                          2.287296  
+UART_TX_U330              NAND4X0_HVT     saed32hvt_ss0p7v125c
+                                                          2.033152  
+UART_TX_U332              NAND4X0_HVT     saed32hvt_ss0p7v125c
+                                                          2.033152  
+UART_TX_U334              INVX0_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+UART_TX_U335              INVX0_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+UART_TX_U336              INVX0_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+UART_TX_U338              INVX0_HVT       saed32hvt_ss0p7v125c
+                                                          1.270720  
+UART_TX_U342              AND2X1_HVT      saed32hvt_ss0p7v125c
+                                                          2.033152  
+UART_TX_U344              NOR4X0_HVT      saed32hvt_ss0p7v125c
+                                                          3.049728  
+UART_TX_add_53_U1_1_1     HADDX1_HVT      saed32hvt_ss0p7v125c
+                                                          3.303872  mo, r
+UART_TX_add_53_U1_1_2     HADDX1_HVT      saed32hvt_ss0p7v125c
+                                                          3.303872  mo, r
+UART_TX_add_53_U1_1_3     HADDX1_HVT      saed32hvt_ss0p7v125c
+                                                          3.303872  mo, r
+UART_TX_add_53_U1_1_4     HADDX1_HVT      saed32hvt_ss0p7v125c
+                                                          3.303872  mo, r
+UART_TX_add_53_U1_1_5     HADDX1_HVT      saed32hvt_ss0p7v125c
+                                                          3.303872  mo, r
+UART_TX_add_57_U1_1_1     HADDX1_HVT      saed32hvt_ss0p7v125c
+                                                          3.303872  mo, r
+UART_TX_add_57_U1_1_2     HADDX1_HVT      saed32hvt_ss0p7v125c
+                                                          3.303872  mo, r
+UART_TX_add_57_U1_1_3     HADDX1_HVT      saed32hvt_ss0p7v125c
+                                                          3.303872  mo, r
+UART_TX_add_57_U1_1_4     HADDX1_HVT      saed32hvt_ss0p7v125c
+                                                          3.303872  mo, r
+UART_TX_add_57_U1_1_5     HADDX1_HVT      saed32hvt_ss0p7v125c
+                                                          3.303872  mo, r
+UART_TX_add_57_U1_1_6     HADDX1_HVT      saed32hvt_ss0p7v125c
+                                                          3.303872  mo, r
+UART_TX_add_57_U1_1_7     HADDX1_HVT      saed32hvt_ss0p7v125c
+                                                          3.303872  mo, r
+UART_TX_add_57_U1_1_8     HADDX1_HVT      saed32hvt_ss0p7v125c
+                                                          3.303872  mo, r
+UART_TX_add_57_U1_1_9     HADDX1_HVT      saed32hvt_ss0p7v125c
+                                                          3.303872  mo, r
+UART_TX_add_57_U1_1_10    HADDX1_HVT      saed32hvt_ss0p7v125c
+                                                          3.303872  mo, r
+UART_TX_add_57_U1_1_11    HADDX1_HVT      saed32hvt_ss0p7v125c
+                                                          3.303872  mo, r
+UART_TX_add_57_U1_1_12    HADDX1_HVT      saed32hvt_ss0p7v125c
+                                                          3.303872  mo, r
+UART_TX_add_57_U1_1_13    HADDX1_HVT      saed32hvt_ss0p7v125c
+                                                          3.303872  mo, r
+UART_TX_c_clocks_reg_0_   DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_c_clocks_reg_1_   DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_c_clocks_reg_2_   DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_c_clocks_reg_3_   DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_c_clocks_reg_4_   DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_c_clocks_reg_5_   DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_c_clocks_reg_6_   DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_c_clocks_reg_7_   DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_c_clocks_reg_8_   DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_c_clocks_reg_9_   DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_c_clocks_reg_10_  DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_c_clocks_reg_11_  DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_c_clocks_reg_12_  DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_c_clocks_reg_13_  DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_c_clocks_reg_14_  DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_c_pulses_reg_0_   DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_c_pulses_reg_1_   DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_c_pulses_reg_2_   DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_c_pulses_reg_3_   DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_c_pulses_reg_4_   DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_c_pulses_reg_5_   DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_c_pulses_reg_6_   DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_0_  DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_1_  DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_2_  DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_3_  DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_4_  DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_5_  DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_6_  DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_7_  DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_8_  DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_9_  DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_10_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_11_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_12_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_13_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_14_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_15_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_16_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_17_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_18_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_19_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_20_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_21_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_22_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_23_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_24_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_25_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_26_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_27_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_28_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_29_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_30_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_31_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_32_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_33_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_34_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_35_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_36_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_37_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_38_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_39_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_40_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_41_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_42_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_43_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_44_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_45_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_46_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_47_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_48_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_49_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_50_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_51_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_52_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_53_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_54_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_55_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_56_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_57_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_58_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_59_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_60_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_61_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_62_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_63_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_64_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_65_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_66_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_67_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_68_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_69_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_70_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_71_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_72_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_73_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_74_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_75_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_76_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_77_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_78_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_79_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_80_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_81_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_82_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_83_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_84_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_85_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_86_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_87_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_88_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_89_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_90_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_91_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_92_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_93_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_94_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_95_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_96_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_97_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_98_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_99_ DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_100_
+                          DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_101_
+                          DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_102_
+                          DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_m_packets_reg_103_
+                          DFFASX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_state_reg_0_      DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_state_reg_1_      DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_state_reg_2_      DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_state_reg_3_      DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_state_reg_4_      DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_state_reg_5_      DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_state_reg_6_      DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_state_reg_7_      DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_state_reg_8_      DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_state_reg_9_      DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_state_reg_10_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_state_reg_11_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_state_reg_12_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_state_reg_13_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_state_reg_14_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_state_reg_15_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_state_reg_16_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_state_reg_17_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_state_reg_18_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_state_reg_19_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_state_reg_20_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_state_reg_21_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_state_reg_22_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_state_reg_23_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_state_reg_24_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_state_reg_25_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_state_reg_26_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_state_reg_27_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_state_reg_28_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_state_reg_29_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_state_reg_30_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+UART_TX_state_reg_31_     DFFARX1_HVT     saed32hvt_ss0p7v125c
+                                                          7.116032  n
+--------------------------------------------------------------------------------
+Total 922 cells                                           3892.469557
+1

@@ -1,0 +1,7 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+E:/Verilog Course/Assignments/Ass_2/Maxpooling_bad/Maxpooling_bad.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,uvm,,,,,,
+E:/Verilog Course/Assignments/Ass_2/maxpool_refactored.sv,1682344854,systemVerilog,,E:/Verilog Course/Assignments/Ass_2/maxpool_tb_refactored.sv,,max_2x2;maxpool;types,,uvm,,,,,,
+E:/Verilog Course/Assignments/Ass_2/maxpool_tb_refactored.sv,1682355925,systemVerilog,,,,maxpool_tb,,uvm,,,,,,

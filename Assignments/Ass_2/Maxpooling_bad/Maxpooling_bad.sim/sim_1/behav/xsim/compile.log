@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/Verilog Course/Assignments/Ass_2/maxpool_refactored.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maxpool
+INFO: [VRFC 10-311] analyzing module max_2x2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/Verilog Course/Assignments/Ass_2/maxpool_tb_refactored.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maxpool_tb

@@ -1,0 +1,14 @@
+set NDM_LIBS {}
+set FRAME_LIBS {}
+set LEF_FILES {/home/aedc4/0_SysV_Mewan/ASIC_flow_demo/libs/saed32nm_hvt_1p9m.lef}
+set DB_FILES {}
+set TECH_FILE "/home/aedc4/0_SysV_Mewan/ASIC_flow_demo/libs/saed32nm_1p9m_mw.tf"
+
+set_app_options -name lib.workspace.create_cached_lib -value true
+set_app_options -name lib.workspace.include_design_filters -value {FOOT2X16_HVT FOOT2X2_HVT FOOT2X32_HVT FOOT2X4_HVT FOOT2X8_HVT FOOTX16_HVT FOOTX2_HVT FOOTX32_HVT FOOTX4_HVT FOOTX8_HVT HEAD2X16_HVT HEAD2X2_HVT HEAD2X32_HVT HEAD2X4_HVT HEAD2X8_HVT HEADX16_HVT HEADX2_HVT HEADX32_HVT HEADX4_HVT HEADX8_HVT LSDNENCLSSX1_HVT LSDNENCLSSX2_HVT LSDNENCLSSX4_HVT LSDNENCLSSX8_HVT LSDNENCLX1_HVT LSDNENCLX2_HVT LSDNENCLX4_HVT LSDNENCLX8_HVT LSDNENSSX1_HVT LSDNENSSX2_HVT LSDNENSSX4_HVT LSDNENSSX8_HVT LSDNENX1_HVT LSDNENX2_HVT LSDNENX4_HVT LSDNENX8_HVT LSDNSSX1_HVT LSDNSSX2_HVT LSDNSSX4_HVT LSDNSSX8_HVT LSDNX1_HVT LSDNX2_HVT LSDNX4_HVT LSDNX8_HVT LSUPENCLX1_HVT LSUPENCLX2_HVT LSUPENCLX4_HVT LSUPENCLX8_HVT LSUPENX1_HVT LSUPENX2_HVT LSUPENX4_HVT LSUPENX8_HVT LSUPX1_HVT LSUPX2_HVT LSUPX4_HVT LSUPX8_HVT}
+#suppress_messages
+
+set_app_options -name lib.workspace.allow_read_aggregate_lib -value true
+create_workspace saed32hvt_ss0p7v125c_physical_only -flow physical_only -technology $TECH_FILE -scale_factor 10000
+read_lef $LEF_FILES
+process_workspaces -check_options {-allow_missing} -force -directory CLIBs -output saed32hvt_ss0p7v125c_physical_only.ndm

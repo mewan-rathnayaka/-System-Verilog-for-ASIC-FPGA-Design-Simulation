@@ -1,0 +1,134 @@
+#@ # 
+#@ # Running icc2_shell Version U-2022.12 for linux64 -- Dec 11, 2022
+#@ # Date:   Wed Apr 26 21:10:27 2023
+#@ # Run by: aedc4@computerlab-pc4
+#@ 
+
+start gui
+gui
+start_gui
+gui_set_pref_value -category {SelectByNamePalette} -key {ObjectType} -value {Logical Cells}
+#/* Top-level Module                                  */
+set top_module full_adder
+#/* Library Name                                      */
+set library_name fa_icc2
+set PDKDIR /home/aedc4/libs/tsmc_32nm/SAED32_EDK
+set SAED32_EDK /home/aedc4/libs/tsmc_32nm/SAED32_EDK/lib
+set synopsys /home/aedc4/Apps/syn/T-2022.03-SP5-1
+set search_path [concat $search_path $SAED32_EDK/stdcell_hvt $SAED32_EDK/stdcell_hvt/db_nldm]
+set link_library {* saed32hvt_ss0p7v125c.db}
+set_app_options -list {lib.configuration.default_flow_setup {}};
+set_app_options -list {lib.configuration.output_dir {CLIBs}}
+set_app_options -list {lib.configuration.lef_site_mapping {}}
+set_app_options -list {lib.configuration.process_label_mapping {}}
+set_app_options -list {lib.configuration.display_lm_messages {false}}
+#----------------------------------------------
+#   Create Library
+#----------------------------------------------
+create_lib -ref_libs {/home/aedc4/0_SysV_Mewan/ASIC_flow_demo/libs/saed32nm_hvt_1p9m.lef} -technology /home/aedc4/0_SysV_Mewan/ASIC_flow_demo/libs/saed32nm_1p9m_mw.tf $library_name
+read_parasitic_tech -name {parasitics} -tlup {/home/aedc4/0_SysV_Mewan/ASIC_flow_demo/libs/saed32nm_1p9m_Cmax.tluplus} -layermap {/home/aedc4/0_SysV_Mewan/ASIC_flow_demo/libs/saed32nm_tf_itf_tluplus.map}
+change_selection [get_libs {fa_icc2}]
+read_verilog -library fa_icc2 -top full_adder ../../output/full_adder.out.v
+link_block
+win_set_filter -visible -class cell -filter {clock_margin hard_macro_margin hard_margin route_blockage_margin soft_margin}
+win_set_filter -visible -class pseudo_bump -filter {deleted}
+win_set_filter -visible -class pseudo_tsv -filter {deleted}
+win_set_filter -visible -class placement_blockage -filter {wiring} -layer {0-82}
+win_set_filter -expand_cell_types {soft_macro  }
+win_set_select_class -visible {cell port bound routing_blockage shaping_blockage pg_region bump_region pseudo_bump pseudo_tsv pin_blockage block_shielding topology_node topology_edge topology_repeater annotation_shape core_area die_area edit_group shape via terminal fill_cell placement_blockage }
+win_set_filter -class cell -filter {array clock_margin hard_macro_margin hard_margin route_blockage_margin soft_margin}
+win_set_filter -class pseudo_bump -filter {deleted}
+win_set_filter -class pseudo_tsv -filter {deleted}
+win_set_filter -class placement_blockage -filter {wiring} -layer {0-82}
+win_set_select_class {cell port bound routing_blockage shaping_blockage pg_region bump_region pseudo_bump pseudo_tsv pin_blockage topology_node topology_edge topology_repeater annotation_shape edit_group shape via placement_blockage }
+save_block fa_icc2:full_adder
+initialize_floorplan -core_offset {5}
+initialize_floorplan -core_offset {5}
+connect_pg_net -automatic
+connect_pg_net -automatic
+create_pg_ring_pattern ring_pattern -horizontal_layer M1    -horizontal_width {1.5} -horizontal_spacing {0.5}    -vertical_layer M2 -vertical_width {1.5} -vertical_spacing {0.5}
+set_pg_strategy core_ring    -pattern {{name: ring_pattern}    {nets: {VDD VSS}} {offset: {0.5 0.5}}} -core
+compile_pg -strategies core_ring
+win_select_objects -within {{0.080 0.030} {14.423 13.255}} -slct_targets global -slct_targets_operation clear
+change_selection 
+connect_pg_net -automatic
+create_pg_mesh_pattern mesh_pattern -layers { {{horizontal_layer: M1} {width: 0.75} {pitch: 30} {spacing: interleaving}}  {{vertical_layer: M2} {width: 0.84} {pitch: 33.6} {spacing: interleaving}} }
+set_pg_strategy mesh_strategy -polygon {{0.000 0.000} {14.408 13.344}} -pattern {{pattern: mesh_pattern}{nets: {VDD VSS}}} -blockage {macros: all}
+create_pg_std_cell_conn_pattern std_cell_pattern
+set_pg_strategy std_cell_strategy -polygon {{0.000 0.000} {14.408 13.344}} -pattern {{pattern: std_cell_pattern}{nets: {VDD VSS}}}
+compile_pg -ignore_via_drc
+connect_pg_net -automatic
+create_pg_mesh_pattern mesh_pattern -layers { {{horizontal_layer: M1} {width: 0.75} {pitch: 30} {spacing: interleaving}}  {{vertical_layer: M2} {width: 0.84} {pitch: 33.6} {spacing: interleaving}} }
+set_pg_strategy mesh_strategy -polygon {{0.000 0.000} {14.408 13.344}} -pattern {{pattern: mesh_pattern}{nets: {VDD VSS}}} -blockage {macros: all}
+create_pg_std_cell_conn_pattern std_cell_pattern
+set_pg_strategy std_cell_strategy -polygon {{0.000 0.000} {14.408 13.344}} -pattern {{pattern: std_cell_pattern}{nets: {VDD VSS}}}
+compile_pg -ignore_via_drc
+remove_routes -stripe -lib_cell_pin_connect
+remove_routes -stripe -lib_cell_pin_connect
+remove_routes -stripe -lib_cell_pin_connect
+win_select_objects -slct_targets global -at {4.220 8.242} -radius 0.0224
+win_select_objects -slct_targets global -at {1.557 6.721} -radius 0.0224
+change_selection 
+compile_pg -undo
+compile_pg -undo
+compile_pg -undo
+compile_pg -undo
+connect_pg_net -automatic
+create_pg_mesh_pattern mesh_pattern -layers { {{horizontal_layer: M1} {width: 0.75} {pitch: 30} {spacing: interleaving}}  {{vertical_layer: M2} {width: 0.84} {pitch: 33.6} {spacing: interleaving}} }
+set_pg_strategy mesh_strategy -polygon {{0.438 0.769} {14.020 12.919}} -pattern {{pattern: mesh_pattern}{nets: {VDD VSS}}} -blockage {macros: all}
+create_pg_std_cell_conn_pattern std_cell_pattern
+set_pg_strategy std_cell_strategy -polygon {{0.438 0.769} {14.020 12.919}} -pattern {{pattern: std_cell_pattern}{nets: {VDD VSS}}}
+compile_pg -ignore_via_drc
+connect_pg_net -automatic
+create_pg_mesh_pattern mesh_pattern -layers { {{horizontal_layer: M1} {width: 0.75} {pitch: 30} {spacing: interleaving}}  {{vertical_layer: M2} {width: 0.84} {pitch: 33.6} {spacing: interleaving}} }
+set_pg_strategy mesh_strategy -polygon {{0.438 0.769} {14.020 12.919}} -pattern {{pattern: mesh_pattern}{nets: {VDD VSS}}} -blockage {macros: all}
+create_pg_std_cell_conn_pattern std_cell_pattern
+set_pg_strategy std_cell_strategy -polygon {{0.438 0.769} {14.020 12.919}} -pattern {{pattern: std_cell_pattern}{nets: {VDD VSS}}}
+compile_pg -ignore_via_drc
+remove_routes -stripe -lib_cell_pin_connect
+remove_routes -stripe -lib_cell_pin_connect
+remove_routes -stripe -lib_cell_pin_connect
+remove_routes -stripe -lib_cell_pin_connect
+remove_routes -stripe -lib_cell_pin_connect
+remove_routes -stripe -lib_cell_pin_connect
+win_select_objects -within {{0.461 0.814} {13.685 12.807}} -slct_targets global -slct_targets_operation clear
+remove_routes -stripe -lib_cell_pin_connect
+change_selection 
+win_select_objects -slct_targets global -at {3.414 8.399} -radius 0.0224
+win_select_objects -slct_targets global -at {1.423 6.721} -radius 0.0224
+change_selection 
+win_select_objects -slct_targets global -at {4.309 9.518} -radius 0.0224
+change_selection 
+set_app_options -name plan.pins.incremental -value true -block [current_block]
+set_app_options -name plan.pins.layer_range -value 5 -block [current_block]
+set_app_options -name plan.pins.pin_range -value 10.00 -block [current_block]
+place_pins -self -ports {VDD VSS a b ci co sum}
+save_lib -all
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {-2.515 6.184}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {-2.518 6.192}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {4.088 5.575}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {4.078 5.584}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {16.430 6.150}
+set_app_options -name place.coarse.fix_hard_macros -value false
+set_app_options -name plan.place.auto_create_blockages -value auto
+create_placement -floorplan -timing_driven
+save_lib -all
+gui_scroll -window [gui_get_current_window -types Layout -mru] -hrel -0.25
+gui_scroll -window [gui_get_current_window -types Layout -mru] -hrel -0.25
+gui_scroll -window [gui_get_current_window -types Layout -mru] -hrel -0.25
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {7.289 6.322}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {7.281 6.330}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {7.284 6.327}
+#clock_opt
+route_auto -max_detail_route_iterations 5
+refresh_via_ladder_constraints -performance true -emt false
+save_block $library_name:$top_module
+save_lib -all
+write_gds -hier all ${top_module}.gds
+start_gui
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {7.707 6.612}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {7.709 6.608}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {8.684 6.102}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {8.685 6.105}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {8.687 6.112}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {12.685 7.926}

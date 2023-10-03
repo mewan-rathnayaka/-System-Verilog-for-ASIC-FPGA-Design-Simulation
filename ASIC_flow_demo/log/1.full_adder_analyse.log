@@ -1,0 +1,6 @@
+Running PRESTO HDLC
+Compiling source file ../input/rtl/full_adder.sv
+Presto compilation completed successfully.
+Loading db file '/home/aedc4/libs/tsmc_32nm/SAED32_EDK/lib/stdcell_hvt/db_nldm/saed32hvt_ss0p7v125c.db'
+Loading db file '/home/aedc4/Apps/syn/T-2022.03-SP5-1/libraries/syn/dw_foundation.sldb'
+1

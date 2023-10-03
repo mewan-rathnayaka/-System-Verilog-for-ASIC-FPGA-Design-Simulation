@@ -1,0 +1,103 @@
+Warning: Design 'mvm_uart_system' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : reference
+Design : mvm_uart_system
+Version: T-2022.03-SP5-1
+Date   : Sat Apr 29 13:28:25 2023
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1_HVT         saed32hvt_ss0p7v125c
+                                  2.033152       8     16.265217  
+AND3X1_HVT         saed32hvt_ss0p7v125c
+                                  2.287296       3      6.861888  
+AND4X1_HVT         saed32hvt_ss0p7v125c
+                                  2.541440      12     30.497280  
+AND4X2_HVT         saed32hvt_ss0p7v125c
+                                  3.812160       1      3.812160  
+AO21X1_HVT         saed32hvt_ss0p7v125c
+                                  2.541440      71    180.442241  
+AO21X2_HVT         saed32hvt_ss0p7v125c
+                                  2.795584       2      5.591168  
+AO22X1_HVT         saed32hvt_ss0p7v125c
+                                  2.541440      57    144.862081  
+AO221X1_HVT        saed32hvt_ss0p7v125c
+                                  3.049728     101    308.022520  
+AOI21X1_HVT        saed32hvt_ss0p7v125c
+                                  3.049728       1      3.049728  
+DFFARX1_HVT        saed32hvt_ss0p7v125c
+                                  7.116032     120    853.923855  n
+DFFARX2_HVT        saed32hvt_ss0p7v125c
+                                  7.878464       1      7.878464  n
+DFFASX1_HVT        saed32hvt_ss0p7v125c
+                                  7.116032     104    740.067341  n
+HADDX1_HVT         saed32hvt_ss0p7v125c
+                                  3.303872      31    102.420035  r
+IBUFFX2_HVT        saed32hvt_ss0p7v125c
+                                  2.541440       4     10.165760  
+INVX0_HVT          saed32hvt_ss0p7v125c
+                                  1.270720      32     40.663040  
+INVX1_HVT          saed32hvt_ss0p7v125c
+                                  1.270720      20     25.414400  
+INVX2_HVT          saed32hvt_ss0p7v125c
+                                  1.524864       5      7.624320  
+INVX4_HVT          saed32hvt_ss0p7v125c
+                                  2.033152       1      2.033152  
+INVX8_HVT          saed32hvt_ss0p7v125c
+                                  3.049728       3      9.149184  
+INVX16_HVT         saed32hvt_ss0p7v125c
+                                  5.082880       1      5.082880  
+NAND2X0_HVT        saed32hvt_ss0p7v125c
+                                  1.524864      11     16.773504  
+NAND3X0_HVT        saed32hvt_ss0p7v125c
+                                  1.779008       7     12.453056  
+NAND3X2_HVT        saed32hvt_ss0p7v125c
+                                  3.049728       4     12.198912  
+NAND4X0_HVT        saed32hvt_ss0p7v125c
+                                  2.033152      17     34.563586  
+NAND4X1_HVT        saed32hvt_ss0p7v125c
+                                  3.049728       1      3.049728  
+NOR2X0_HVT         saed32hvt_ss0p7v125c
+                                  2.541440       1      2.541440  
+NOR4X0_HVT         saed32hvt_ss0p7v125c
+                                  3.049728       4     12.198912  
+NOR4X1_HVT         saed32hvt_ss0p7v125c
+                                  3.049728      12     36.596735  
+OA21X1_HVT         saed32hvt_ss0p7v125c
+                                  2.541440       1      2.541440  
+OAI22X1_HVT        saed32hvt_ss0p7v125c
+                                  3.049728       2      6.099456  
+OAI222X1_HVT       saed32hvt_ss0p7v125c
+                                  3.812160       1      3.812160  
+OR2X1_HVT          saed32hvt_ss0p7v125c
+                                  2.033152       3      6.099456  
+OR3X1_HVT          saed32hvt_ss0p7v125c
+                                  2.287296       5     11.436480  
+OR3X2_HVT          saed32hvt_ss0p7v125c
+                                  2.541440       1      2.541440  
+OR4X1_HVT          saed32hvt_ss0p7v125c
+                                  3.558016       1      3.558016  
+XNOR2X2_HVT        saed32hvt_ss0p7v125c
+                                  4.574592       1      4.574592  
+XOR2X1_HVT         saed32hvt_ss0p7v125c
+                                  4.320448       1      4.320448  
+XOR2X2_HVT         saed32hvt_ss0p7v125c
+                                  4.574592       6     27.447553  
+matvec_mul                        0.000000       1      0.000000  b
+skid_buffer                       0.000000       1      0.000000  b
+-----------------------------------------------------------------------------
+Total 40 references                                  2706.633626
+1

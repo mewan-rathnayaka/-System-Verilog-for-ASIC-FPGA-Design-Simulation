@@ -1,0 +1,407 @@
+ 
+                              IC Compiler II (TM)
+
+                  Version U-2022.12 for linux64 - Dec 11, 2022
+  This release has significant feature enhancements. Please review the Release
+                       Notes associated with this release.
+
+                    Copyright (c) 1988 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+icc2_shell> start_gui
+icc2_shell> #/* Top-level Module                                  */
+icc2_shell> set top_module mvm_uart_system
+mvm_uart_system
+icc2_shell> #/* Library Name                                      */
+icc2_shell> set library_name uart_icc2
+uart_icc2
+icc2_shell> set PDKDIR /home/aedc4/libs/tsmc_32nm/SAED32_EDK
+/home/aedc4/libs/tsmc_32nm/SAED32_EDK
+icc2_shell> set SAED32_EDK /home/aedc4/libs/tsmc_32nm/SAED32_EDK/lib
+/home/aedc4/libs/tsmc_32nm/SAED32_EDK/lib
+icc2_shell> set synopsys /home/aedc4/Apps/syn/T-2022.03-SP5-1
+/home/aedc4/Apps/syn/T-2022.03-SP5-1
+icc2_shell> set search_path [concat $search_path $SAED32_EDK/stdcell_hvt $SAED32_EDK/stdcell_hvt/db_nldm]
+. /home/aedc4/libs/tsmc_32nm/SAED32_EDK/lib/stdcell_hvt /home/aedc4/libs/tsmc_32nm/SAED32_EDK/lib/stdcell_hvt/db_nldm
+icc2_shell> set link_library {* saed32hvt_ss0p7v125c.db}
+* saed32hvt_ss0p7v125c.db
+icc2_shell> set_app_options -list {lib.configuration.default_flow_setup {}};
+lib.configuration.default_flow_setup {}
+icc2_shell> set_app_options -list {lib.configuration.output_dir {CLIBs}}
+lib.configuration.output_dir CLIBs
+icc2_shell> set_app_options -list {lib.configuration.lef_site_mapping {}}
+lib.configuration.lef_site_mapping {}
+icc2_shell> set_app_options -list {lib.configuration.process_label_mapping {}}
+lib.configuration.process_label_mapping {}
+icc2_shell> set_app_options -list {lib.configuration.display_lm_messages {false}}
+lib.configuration.display_lm_messages false
+icc2_shell> #----------------------------------------------
+icc2_shell> #   Create Library
+icc2_shell> #----------------------------------------------
+icc2_shell> create_lib -ref_libs {/home/aedc4/0_SysV_Mewan/ASIC_flow_ass_3/libs/saed32nm_hvt_1p9m.lef} -technology /home/aedc4/0_SysV_Mewan/ASIC_flow_ass_3/libs/saed32nm_1p9m_mw.tf $library_name
+Information: Loading technology file '/home/aedc4/0_SysV_Mewan/ASIC_flow_ass_3/libs/saed32nm_1p9m_mw.tf' (FILE-007)
+...Created 2 lib groups
+
+... 2 cell libraries to build.
+
+
+... checking whether need to build cell library: saed32hvt_ss0p7v125c.ndm (1/2)
+... checking whether can reuse library under output directory
+cannot reuse CLIBs/saed32hvt_ss0p7v125c.ndm under output directory: library not exists
+
+... checking whether need to build cell library: saed32hvt_ss0p7v125c_physical_only.ndm (2/2)
+... checking whether can reuse library under output directory
+cannot reuse CLIBs/saed32hvt_ss0p7v125c_physical_only.ndm under output directory: library not exists
+
+... processing cell library: saed32hvt_ss0p7v125c.ndm (1/2)
+... run lm_shell to build the cell library
+...............................................................................
+..............................................................................
+.......................
+created new cell library under output directory: CLIBs/saed32hvt_ss0p7v125c.ndm
+
+... processing cell library: saed32hvt_ss0p7v125c_physical_only.ndm (2/2)
+... run lm_shell to build the cell library
+........
+created new cell library under output directory: CLIBs/saed32hvt_ss0p7v125c_physical_only.ndm
+
+
+Information: Successfully built 2 reference libraries: saed32hvt_ss0p7v125c.ndm saed32hvt_ss0p7v125c_physical_only.ndm. (LIB-093)
+{uart_icc2}
+icc2_shell> read_parasitic_tech -name {parasitics} -tlup {/home/aedc4/0_SysV_Mewan/ASIC_flow_ass_3/libs/saed32nm_1p9m_Cmax.tluplus} -layermap {/home/aedc4/0_SysV_Mewan/ASIC_flow_ass_3/libs/saed32nm_tf_itf_tluplus.map}
+1
+icc2_shell> read_verilog -library uart_icc2 -top mvm_uart_system ../../output/mvm_uart_system.out.v
+Information: Reading Verilog into new design 'mvm_uart_system' in library 'uart_icc2'. (VR-012)
+Loading verilog file '/home/aedc4/0_SysV_Mewan/ASIC_flow_ass_3/output/mvm_uart_system.out.v'
+Information: tri converted to a wire with no special attributes
+                at line 132 in /home/aedc4/0_SysV_Mewan/ASIC_flow_ass_3/output/mvm_uart_system.out.v (SVR-21)
+Information: tri converted to a wire with no special attributes
+                at line 133 in /home/aedc4/0_SysV_Mewan/ASIC_flow_ass_3/output/mvm_uart_system.out.v (SVR-21)
+Information: tri converted to a wire with no special attributes
+                at line 134 in /home/aedc4/0_SysV_Mewan/ASIC_flow_ass_3/output/mvm_uart_system.out.v (SVR-21)
+Information: tri converted to a wire with no special attributes
+                at line 135 in /home/aedc4/0_SysV_Mewan/ASIC_flow_ass_3/output/mvm_uart_system.out.v (SVR-21)
+Information: tri converted to a wire with no special attributes
+                at line 136 in /home/aedc4/0_SysV_Mewan/ASIC_flow_ass_3/output/mvm_uart_system.out.v (SVR-21)
+Information: tri converted to a wire with no special attributes
+                at line 137 in /home/aedc4/0_SysV_Mewan/ASIC_flow_ass_3/output/mvm_uart_system.out.v (SVR-21)
+Information: tri converted to a wire with no special attributes
+                at line 138 in /home/aedc4/0_SysV_Mewan/ASIC_flow_ass_3/output/mvm_uart_system.out.v (SVR-21)
+Information: tri converted to a wire with no special attributes
+                at line 139 in /home/aedc4/0_SysV_Mewan/ASIC_flow_ass_3/output/mvm_uart_system.out.v (SVR-21)
+Information: tri converted to a wire with no special attributes
+                at line 140 in /home/aedc4/0_SysV_Mewan/ASIC_flow_ass_3/output/mvm_uart_system.out.v (SVR-21)
+Information: tri converted to a wire with no special attributes
+                at line 141 in /home/aedc4/0_SysV_Mewan/ASIC_flow_ass_3/output/mvm_uart_system.out.v (SVR-21)
+Information: tri converted to a wire with no special attributes
+                at line 142 in /home/aedc4/0_SysV_Mewan/ASIC_flow_ass_3/output/mvm_uart_system.out.v (SVR-21)
+Information: tri converted to a wire with no special attributes
+                at line 143 in /home/aedc4/0_SysV_Mewan/ASIC_flow_ass_3/output/mvm_uart_system.out.v (SVR-21)
+Information: tri converted to a wire with no special attributes
+                at line 144 in /home/aedc4/0_SysV_Mewan/ASIC_flow_ass_3/output/mvm_uart_system.out.v (SVR-21)
+Information: tri converted to a wire with no special attributes
+                at line 145 in /home/aedc4/0_SysV_Mewan/ASIC_flow_ass_3/output/mvm_uart_system.out.v (SVR-21)
+Information: tri converted to a wire with no special attributes
+                at line 146 in /home/aedc4/0_SysV_Mewan/ASIC_flow_ass_3/output/mvm_uart_system.out.v (SVR-21)
+Information: tri converted to a wire with no special attributes
+                at line 147 in /home/aedc4/0_SysV_Mewan/ASIC_flow_ass_3/output/mvm_uart_system.out.v (SVR-21)
+Information: tri converted to a wire with no special attributes
+                at line 148 in /home/aedc4/0_SysV_Mewan/ASIC_flow_ass_3/output/mvm_uart_system.out.v (SVR-21)
+Information: tri converted to a wire with no special attributes
+                at line 149 in /home/aedc4/0_SysV_Mewan/ASIC_flow_ass_3/output/mvm_uart_system.out.v (SVR-21)
+Number of modules read: 1
+Top level ports: 4
+Total ports in all modules: 4
+Total nets in all modules: 799
+Total instances in all modules: 659
+Elapsed = 00:00:00.01, CPU = 00:00:00.01
+1
+icc2_shell> link_block
+Using libraries: uart_icc2 saed32hvt_ss0p7v125c saed32hvt_ss0p7v125c_physical_only
+Linking block uart_icc2:mvm_uart_system.design
+Warning: Unable to resolve reference to 'skid_buffer' first referenced from module 'mvm_uart_system'. (LNK-005)
+Warning: Unable to resolve reference to 'matvec_mul' first referenced from module 'mvm_uart_system'. (LNK-005)
+Information: User units loaded from library 'saed32hvt_ss0p7v125c' (LNK-040)
+Information: Block 'uart_icc2:mvm_uart_system.design' has 2 unbound instances. (LNK-073)
+Information: Block 'uart_icc2:mvm_uart_system.design' has 2 unresolved references. (LNK-074)
+Information: Total 2 mismatches are found on block 'uart_icc2:mvm_uart_system.design'. (DMM-116)
+Design 'mvm_uart_system' was successfully linked.
+0
+icc2_shell> save_block uart_icc2:mvm_uart_system
+Information: Saving block 'uart_icc2:mvm_uart_system.design'
+icc2_shell> initialize_floorplan -core_offset {5}
+Warning: The routing directions for layer 'M1 M2 M3 M4 M5 M6 M7 M8 M9 MRDL ' are missing. Auto deriving 'horizontal' routing direction for layer 'M1'. (DPUI-924)
+Warning: The routing directions for layer 'M1 M2 M3 M4 M5 M6 M7 M8 M9 MRDL ' are missing. Auto deriving 'vertical' routing direction for layer 'M2'. (DPUI-924)
+Warning: The routing directions for layer 'M1 M2 M3 M4 M5 M6 M7 M8 M9 MRDL ' are missing. Auto deriving 'horizontal' routing direction for layer 'M3'. (DPUI-924)
+Warning: The routing directions for layer 'M1 M2 M3 M4 M5 M6 M7 M8 M9 MRDL ' are missing. Auto deriving 'vertical' routing direction for layer 'M4'. (DPUI-924)
+Warning: The routing directions for layer 'M1 M2 M3 M4 M5 M6 M7 M8 M9 MRDL ' are missing. Auto deriving 'horizontal' routing direction for layer 'M5'. (DPUI-924)
+Warning: The routing directions for layer 'M1 M2 M3 M4 M5 M6 M7 M8 M9 MRDL ' are missing. Auto deriving 'vertical' routing direction for layer 'M6'. (DPUI-924)
+Warning: The routing directions for layer 'M1 M2 M3 M4 M5 M6 M7 M8 M9 MRDL ' are missing. Auto deriving 'horizontal' routing direction for layer 'M7'. (DPUI-924)
+Warning: The routing directions for layer 'M1 M2 M3 M4 M5 M6 M7 M8 M9 MRDL ' are missing. Auto deriving 'vertical' routing direction for layer 'M8'. (DPUI-924)
+Warning: The routing directions for layer 'M1 M2 M3 M4 M5 M6 M7 M8 M9 MRDL ' are missing. Auto deriving 'horizontal' routing direction for layer 'M9'. (DPUI-924)
+Warning: The routing directions for layer 'M1 M2 M3 M4 M5 M6 M7 M8 M9 MRDL ' are missing. Auto deriving 'vertical' routing direction for layer 'MRDL'. (DPUI-924)
+Removing existing floorplan objects
+Creating core...
+Core utilization ratio = 70.38%
+Unplacing all cells...
+Creating site array...
+Creating routing tracks...
+Initializing floorplan completed.
+icc2_shell> 
+****************************************
+Report : Power/Ground Connection Summary
+Design : mvm_uart_system
+Version: U-2022.12
+Date   : Sat Apr 29 14:37:18 2023
+****************************************
+P/G net name                  P/G pin count(previous/current)
+--------------------------------------------------------------------------------
+Power net VDD                 0/657
+Ground net VSS                0/657
+--------------------------------------------------------------------------------
+Information: connections of 1314 power/ground pin(s) are created or changed.
+icc2_shell> create_pg_ring_pattern ring_pattern -horizontal_layer M1    -horizontal_width {1.5} -horizontal_spacing {0.5}    -vertical_layer M2 -vertical_width {1.5} -vertical_spacing {0.5}
+Information: The command 'create_pg_ring_pattern' cleared the undo history. (UNDO-016)
+Successfully create PG ring pattern ring_pattern.
+icc2_shell> set_pg_strategy core_ring    -pattern {{name: ring_pattern}    {nets: {VDD VSS}} {offset: {0.5 0.5}}} -core
+Successfully set PG strategy core_ring.
+icc2_shell> compile_pg -strategies core_ring
+Sanity check for inputs.
+No strategy-level via rule is specified, the default rule will be applied.
+Automatic PG net connection through connect_pg_net is disabled.
+Updating PG strategies.
+Updating strategy core_ring.
+Loading library and design information.
+Number of Standard Cells: 0
+Number of Hard Macros: 0
+Number of Pads: 0
+Creating rings.
+Creating via connection between strategies and existing shapes.
+Via DRC checking runtime 0.00 seconds.
+via connection runtime: 0 seconds.
+Removing dangling/floating wire/vias after DRC check.
+Start iteration 1:
+Checking potential dangling/floating power plan wires.
+Checking dangling/floating vias inside strategy core_ring.
+Checking 8 stacked vias:0% 10% 20% 30% 50% 60% 70% 80% 100%
+Finish removing all dangling or floating wires and vias.
+Commiting wires and vias.
+Committed 8 wires.
+Committing wires takes 0.00 seconds.
+Committed 8 vias.
+Committed 0 wires for via creation.
+Committing vias takes 0.00 seconds.
+Overall PG creation runtime: 0 seconds.
+Successfully compiled PG.
+Overall runtime: 0 seconds.
+1
+icc2_shell> connect_pg_net -automatic
+****************************************
+Report : Power/Ground Connection Summary
+Design : mvm_uart_system
+Version: U-2022.12
+Date   : Sat Apr 29 14:42:01 2023
+****************************************
+P/G net name                  P/G pin count(previous/current)
+--------------------------------------------------------------------------------
+Power net VDD                 657/657
+Ground net VSS                657/657
+--------------------------------------------------------------------------------
+Information: connections of 0 power/ground pin(s) are created or changed.
+1
+icc2_shell> create_pg_mesh_pattern mesh_pattern -layers { {{horizontal_layer: M1} {width: 0.75} {pitch: 7.5} {spacing: interleaving}}  {{vertical_layer: M2} {width: 0.84} {pitch: 8.4} {spacing: interleaving}} }
+Information: The command 'create_pg_wire_pattern' cleared the undo history. (UNDO-016)
+Successfully create mesh pattern mesh_pattern.
+1
+icc2_shell> set_pg_strategy mesh_strategy -polygon {{0.000 0.000} {72.168 71.864}} -pattern {{pattern: mesh_pattern}{nets: {VDD VSS}}} -blockage {macros: all}
+No placed macro is found in: all .
+This blockage constraint will be ignored.
+Successfully set PG strategy mesh_strategy.
+icc2_shell> create_pg_std_cell_conn_pattern std_cell_pattern
+Successfully create standard cell rail pattern std_cell_pattern.
+icc2_shell> set_pg_strategy std_cell_strategy -polygon {{0.000 0.000} {72.168 71.864}} -pattern {{pattern: std_cell_pattern}{nets: {VDD VSS}}}
+Successfully set PG strategy std_cell_strategy.
+icc2_shell> compile_pg -ignore_via_drc
+Sanity check for inputs.
+No strategy is specified, all the pre-defined strategies are used to create PG: core_ring mesh_strategy std_cell_strategy
+No strategy-level via rule is specified, the default rule will be applied.
+Automatic PG net connection through connect_pg_net is disabled.
+Updating PG strategies.
+Updating strategy core_ring.
+Updating strategy mesh_strategy.
+No placed macro is found in: all .
+This blockage constraint will be ignored.
+Updating strategy std_cell_strategy.
+Loading library and design information.
+Number of Standard Cells: 0
+Number of Hard Macros: 0
+Number of Pads: 0
+Creating rings.
+Creating straps and vias in power plan.
+Creating wire shapes for strategies mesh_strategy .
+Creating wire shapes runtime: 0 seconds
+Blockage cutting and DRC fixing for wire shapes for strategies mesh_strategy .
+Check and fix DRC for 36 wires for strategy mesh_strategy.
+Number of threads: 1
+Number of partitions: 2
+Direction of partitions: vertical
+Number of wires: 17
+Checking DRC for 17 wires:10% 20% 35% 45% 55% 70% 80% 90% 100%
+Number of threads: 1
+Number of partitions: 2
+Direction of partitions: horizontal
+Number of wires: 19
+Checking DRC for 19 wires:10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Creating 41 wires after DRC fixing.
+Wire DRC checking runtime 0.00 seconds.
+Creating via shapes for strategies mesh_strategy .
+Working on strategy mesh_strategy.
+Number of detected intersections: 120
+Total runtime of via shapes creation: 0 seconds
+Creating standard cell rails.
+Creating standard cell rails for strategy std_cell_strategy.
+DRC checking and fixing for standard cell rail strategy std_cell_strategy.
+Number of threads: 1
+Number of partitions: 4
+Direction of partitions: horizontal
+Number of wires: 38
+Checking DRC for 38 wires:5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 100%
+Creating 33 wires after DRC fixing.
+Wire DRC checking runtime 0.00 seconds.
+Creating via connection between strategies and existing shapes.
+via connection runtime: 0 seconds.
+Commiting wires and vias.
+Committed 82 wires.
+Committing wires takes 0.00 seconds.
+Committed 617 vias.
+Committed 0 wires for via creation.
+Committing vias takes 0.00 seconds.
+Overall PG creation runtime: 0 seconds.
+Successfully compiled PG.
+Overall runtime: 0 seconds.
+1
+icc2_shell> set_app_options -name plan.pins.incremental -value true -block [current_block]
+plan.pins.incremental true
+icc2_shell> set_app_options -name plan.pins.layer_range -value 5 -block [current_block]
+plan.pins.layer_range 5
+icc2_shell> set_app_options -name plan.pins.pin_range -value 10.00 -block [current_block]
+plan.pins.pin_range 10
+icc2_shell> place_pins -self -ports {clk rstn rx tx}
+Information: Starting 'place_pins' (FLW-8000)
+Information: Time: 2023-04-29 14:48:30 / Session: 0.41 hr / Command: 0.00 hr / Memory: 603 MB (FLW-8100)
+Load DB...
+CPU Time for load db: 00:00:00.00u 00:00:00.00s 00:00:00.00e: 
+
+Printing app options for 'plan.pins*':
+plan.pins.incremental                         :  true                
+plan.pins.pin_range                           :  10                  
+plan.pins.layer_range                         :  5                   
+
+Min routing layer: M1
+Max routing layer: MRDL
+
+
+CPU Time for Top Level Pre-Route Processing: 00:00:00.00u 00:00:00.00s 00:00:00.00e: 
+Number of block ports: 4
+Number of block pin locations assigned from router: 0
+CPU Time for Pin Preparation: 00:00:00.00u 00:00:00.00s 00:00:00.00e: 
+Number of PG ports on blocks: 0
+Number of pins created: 4
+CPU Time for Pin Creation: 00:00:00.00u 00:00:00.00s 00:00:00.00e: 
+Total Pin Placement CPU Time: 00:00:00.01u 00:00:00.00s 00:00:00.01e: 
+Information: Ending 'place_pins' (FLW-8001)
+Information: Time: 2023-04-29 14:48:30 / Session: 0.41 hr / Command: 0.00 hr / Memory: 603 MB (FLW-8100)
+1
+icc2_shell> save_lib -all
+Saving all libraries...
+1
+icc2_shell> set_app_options -name place.coarse.fix_hard_macros -value false
+place.coarse.fix_hard_macros false
+icc2_shell> set_app_options -name plan.place.auto_create_blockages -value auto
+plan.place.auto_create_blockages auto
+icc2_shell> create_placement -floorplan -timing_driven
+Information: Starting 'create_placement' (FLW-8000)
+Information: Time: 2023-04-29 14:54:57 / Session: 0.52 hr / Command: 0.00 hr / Memory: 603 MB (FLW-8100)
+Error: The cell 'AXIS_MVM_SKID' does not have any boundary. (DPUI-057)
+Floorplan placement done.
+Information: Elapsed time for create_placement excluding pending time: 00:00:00.00. (DPUI-902)
+Information: CPU time for create_placement : 00:00:00.00. (DPUI-903)
+Information: Peak memory usage for create_placement : 602 MB. (DPUI-904)
+Information: Ending 'create_placement' (FLW-8001)
+Information: Time: 2023-04-29 14:54:57 / Session: 0.52 hr / Command: 0.00 hr / Memory: 603 MB (FLW-8100)
+Error: Error during floorplan placement.
+        Use error_info for more info. (CMD-013)
+icc2_shell> save_lib -all
+Saving all libraries...
+1
+icc2_shell> set_app_options -name place.coarse.fix_hard_macros -value false
+place.coarse.fix_hard_macros false
+icc2_shell> set_app_options -name plan.place.auto_create_blockages -value auto
+plan.place.auto_create_blockages auto
+icc2_shell> create_placement -floorplan -timing_driven
+Information: Starting 'create_placement' (FLW-8000)
+Information: Time: 2023-04-29 14:55:41 / Session: 0.53 hr / Command: 0.00 hr / Memory: 603 MB (FLW-8100)
+Error: The cell 'AXIS_MVM_SKID' does not have any boundary. (DPUI-057)
+Floorplan placement done.
+Information: Elapsed time for create_placement excluding pending time: 00:00:00.00. (DPUI-902)
+Information: CPU time for create_placement : 00:00:00.00. (DPUI-903)
+Information: Peak memory usage for create_placement : 602 MB. (DPUI-904)
+Information: Ending 'create_placement' (FLW-8001)
+Information: Time: 2023-04-29 14:55:41 / Session: 0.53 hr / Command: 0.00 hr / Memory: 603 MB (FLW-8100)
+Error: Error during floorplan placement.
+        Use error_info for more info. (CMD-013)
+icc2_shell> save_lib -all
+Saving all libraries...
+1
+icc2_shell> clear
+Error: unknown command 'clear' (CMD-005)
+icc2_shell> set_app_options -name place.coarse.fix_hard_macros -value false
+place.coarse.fix_hard_macros false
+icc2_shell> set_app_options -name plan.place.auto_create_blockages -value auto
+plan.place.auto_create_blockages auto
+icc2_shell> create_placement -floorplan -timing_driven -incremental -effort medium
+Information: Starting 'create_placement' (FLW-8000)
+Information: Time: 2023-04-29 14:58:35 / Session: 0.58 hr / Command: 0.00 hr / Memory: 603 MB (FLW-8100)
+Error: The cell 'AXIS_MVM_SKID' does not have any boundary. (DPUI-057)
+Floorplan placement done.
+Information: Elapsed time for create_placement excluding pending time: 00:00:00.00. (DPUI-902)
+Information: CPU time for create_placement : 00:00:00.00. (DPUI-903)
+Information: Peak memory usage for create_placement : 602 MB. (DPUI-904)
+Information: Ending 'create_placement' (FLW-8001)
+Information: Time: 2023-04-29 14:58:35 / Session: 0.58 hr / Command: 0.00 hr / Memory: 603 MB (FLW-8100)
+Error: Error during floorplan placement.
+        Use error_info for more info. (CMD-013)
+icc2_shell> compile
+Error: Command 'compile' is disabled. (CMD-080)
+icc2_shell> create_placement -floorplan -timing_driven -incremental -effort medium
+Information: Starting 'create_placement' (FLW-8000)
+Information: Time: 2023-04-29 15:14:33 / Session: 0.84 hr / Command: 0.00 hr / Memory: 622 MB (FLW-8100)
+Error: The cell 'AXIS_MVM_SKID' does not have any boundary. (DPUI-057)
+Floorplan placement done.
+Information: Elapsed time for create_placement excluding pending time: 00:00:00.00. (DPUI-902)
+Information: CPU time for create_placement : 00:00:00.00. (DPUI-903)
+Information: Peak memory usage for create_placement : 622 MB. (DPUI-904)
+Information: Ending 'create_placement' (FLW-8001)
+Information: Time: 2023-04-29 15:14:33 / Session: 0.84 hr / Command: 0.00 hr / Memory: 622 MB (FLW-8100)
+Error: Error during floorplan placement.
+        Use error_info for more info. (CMD-013)
+icc2_shell> exit
+Maximum memory usage for this session: 622.39 MB
+Maximum memory usage for this session including child processes: 622.39 MB
+CPU usage for this session:    227 seconds (  0.06 hours)
+Elapsed time for this session:   3927 seconds (  1.09 hours)
+Thank you for using IC Compiler II.
+
