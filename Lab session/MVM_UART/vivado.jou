@@ -1,0 +1,63 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue May 30 13:41:02 2023
+# Process ID: 15420
+# Current directory: E:/Verilog Course/Lab session/MVM_UART
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19884 E:\Verilog Course\Lab session\MVM_UART\MVM_UART.xpr
+# Log file: E:/Verilog Course/Lab session/MVM_UART/vivado.log
+# Journal file: E:/Verilog Course/Lab session/MVM_UART\vivado.jou
+# Running On: DESKTOP-QI4C2LA, OS: Windows, CPU Frequency: 2400 MHz, CPU Physical cores: 4, Host memory: 8426 MB
+#-----------------------------------------------------------
+start_gui
+open_project {E:/Verilog Course/Lab session/MVM_UART/MVM_UART.xpr}
+update_compile_order -fileset sources_1
+close_project
+create_project {FPGA lab} {E:/ACA_New/EN2111 - Electronic Circuit Design/Lab/FPGA lab} -part xc7k70tfbv676-1
+add_files -norecurse {{E:/ACA_New/EN2111 - Electronic Circuit Design/Lab/FPGA lab/verilog_fpga_uart-master/uart.v} {E:/ACA_New/EN2111 - Electronic Circuit Design/Lab/FPGA lab/verilog_fpga_uart-master/receiver.v} {E:/ACA_New/EN2111 - Electronic Circuit Design/Lab/FPGA lab/verilog_fpga_uart-master/testbench.v} {E:/ACA_New/EN2111 - Electronic Circuit Design/Lab/FPGA lab/verilog_fpga_uart-master/transmitter.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+add_files -norecurse {{E:/ACA_New/EN2111 - Electronic Circuit Design/Lab/FPGA lab/verilog_fpga_uart-master/buadrate.v}}
+update_compile_order -fileset sources_1
+launch_simulation
+source uart_TB.tcl
+close_sim
+launch_simulation
+source uart_TB.tcl
+close_sim
+launch_simulation
+source uart_TB.tcl
+close_sim
+launch_simulation
+source uart_TB.tcl
+close_sim
+close_project
+create_project {FPGA lab 2} {E:/ACA_New/EN2111 - Electronic Circuit Design/Lab/FPGA lab 2} -part xc7k70tfbv676-1
+add_files -norecurse {{E:/ACA_New/EN2111 - Electronic Circuit Design/Lab/FPGA lab 2/Nandland/tx.v} {E:/ACA_New/EN2111 - Electronic Circuit Design/Lab/FPGA lab 2/Nandland/rx.v} {E:/ACA_New/EN2111 - Electronic Circuit Design/Lab/FPGA lab 2/Nandland/tb.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+export_ip_user_files -of_objects  [get_files {{E:/ACA_New/EN2111 - Electronic Circuit Design/Lab/FPGA lab 2/Nandland/tb.v}}] -no_script -reset -force -quiet
+remove_files  {{E:/ACA_New/EN2111 - Electronic Circuit Design/Lab/FPGA lab 2/Nandland/tb.v}}
+remove_files  {{E:/ACA_New/EN2111 - Electronic Circuit Design/Lab/FPGA lab 2/Nandland/tb.v}}
+export_ip_user_files -of_objects  [get_files {{E:/ACA_New/EN2111 - Electronic Circuit Design/Lab/FPGA lab 2/Nandland/rx.v}}] -no_script -reset -force -quiet
+remove_files  {{E:/ACA_New/EN2111 - Electronic Circuit Design/Lab/FPGA lab 2/Nandland/rx.v}}
+export_ip_user_files -of_objects  [get_files {{E:/ACA_New/EN2111 - Electronic Circuit Design/Lab/FPGA lab 2/Nandland/tx.v}}] -no_script -reset -force -quiet
+remove_files  {{E:/ACA_New/EN2111 - Electronic Circuit Design/Lab/FPGA lab 2/Nandland/tx.v}}
+add_files -norecurse {{E:/ACA_New/EN2111 - Electronic Circuit Design/Lab/FPGA lab 2/Nandland/uart_tb.v} {E:/ACA_New/EN2111 - Electronic Circuit Design/Lab/FPGA lab 2/Nandland/uart_rx.v} {E:/ACA_New/EN2111 - Electronic Circuit Design/Lab/FPGA lab 2/Nandland/uart_tx.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+launch_simulation
+source uart_tb.tcl
+add_bp {E:/ACA_New/EN2111 - Electronic Circuit Design/Lab/FPGA lab 2/Nandland/uart_rx.v} 39
+remove_bps -file {E:/ACA_New/EN2111 - Electronic Circuit Design/Lab/FPGA lab 2/Nandland/uart_rx.v} -line 39
+add_bp {E:/ACA_New/EN2111 - Electronic Circuit Design/Lab/FPGA lab 2/Nandland/uart_rx.v} 39
+remove_bps -file {E:/ACA_New/EN2111 - Electronic Circuit Design/Lab/FPGA lab 2/Nandland/uart_rx.v} -line 39
+add_bp {E:/ACA_New/EN2111 - Electronic Circuit Design/Lab/FPGA lab 2/Nandland/uart_rx.v} 39
+remove_bps -file {E:/ACA_New/EN2111 - Electronic Circuit Design/Lab/FPGA lab 2/Nandland/uart_rx.v} -line 39
+run all

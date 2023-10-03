@@ -1,0 +1,89 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Sun Apr 23 12:14:46 2023
+| Host         : DESKTOP-QI4C2LA running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file fpga_module_control_sets_placed.rpt
+| Design       : fpga_module
+| Device       : xc7z010
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    11 |
+|    Minimum number of control sets                        |    11 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    27 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    11 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     5 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |               4 |            2 |
+| No           | Yes                   | No                     |               4 |            3 |
+| Yes          | No                    | No                     |            2328 |          711 |
+| Yes          | No                    | Yes                    |            1037 |          484 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+------------------------------------------------+--------------------------------+------------------+----------------+--------------+
+|  Clock Signal  |                  Enable Signal                 |        Set/Reset Signal        | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+------------------------------------------------+--------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG | mvm_uart_system_0/AXIS_MVM/SKID/s_ready_reg_0  | mvm_uart_system_0/UART_RX/rstn |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | mvm_uart_system_0/UART_RX/c_words              | mvm_uart_system_0/UART_RX/rstn |                2 |              7 |         3.50 |
+|  clk_IBUF_BUFG |                                                | mvm_uart_system_0/UART_RX/rstn |                5 |              8 |         1.60 |
+|  clk_IBUF_BUFG | mvm_uart_system_0/UART_TX/c_pulses_1           | mvm_uart_system_0/UART_RX/rstn |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG | mvm_uart_system_0/UART_RX/c_clocks[10]_i_1_n_0 | mvm_uart_system_0/UART_RX/rstn |                4 |             11 |         2.75 |
+|  clk_IBUF_BUFG | mvm_uart_system_0/UART_TX/c_clocks             | mvm_uart_system_0/UART_RX/rstn |                4 |             11 |         2.75 |
+|  clk_IBUF_BUFG | mvm_uart_system_0/AXIS_MVM/SKID/m_en           |                                |               52 |            152 |         2.92 |
+|  clk_IBUF_BUFG | mvm_uart_system_0/AXIS_MVM/SKID/buffer_en      |                                |               59 |            152 |         2.58 |
+|  clk_IBUF_BUFG | mvm_uart_system_0/UART_TX/m_packets_0          | mvm_uart_system_0/UART_RX/rstn |              117 |            416 |         3.56 |
+|  clk_IBUF_BUFG | mvm_uart_system_0/UART_RX/c_bits[2]_i_1_n_0    | mvm_uart_system_0/UART_RX/rstn |              352 |            579 |         1.64 |
+|  clk_IBUF_BUFG | mvm_uart_system_0/AXIS_MVM/SKID/s_ready_reg_0  |                                |              600 |           2024 |         3.37 |
++----------------+------------------------------------------------+--------------------------------+------------------+----------------+--------------+
+
+
